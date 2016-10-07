@@ -1,0 +1,9 @@
+fields:
+  estado_venta:
+    required:
+      msg: El campo estado no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+fillin:
+  enabled: true

@@ -1,0 +1,58 @@
+all:    
+# Llaves utilizadas para la creacion de los Md5
+  private_key_sf_guard_user:         h1JDsW3
+  private_key_sf_guard_group:        dGfrT3s
+  private_key_sf_guard_permission:   hUo5b3M
+  private_key_sf_guard_user_profile: k8hY6b2
+  private_key_transporte_conductor:  O9unHbt
+  private_key_transporte_empresa:    jeiw73n
+  private_key_proveedores:           yh7Nmuq
+  private_key_clientes:              12gBhQQ
+  private_key_contactos:             sd237Jb
+  private_key_familias:              f127gnk
+  private_key_articulos:             o9ij23m
+  private_key_ubicaciones:           fdjks72
+  private_key_pedidos:               u2d21dd
+  private_key_ventas:                ppwo28n
+  private_key_entradas:              99idbwq
+  private_key_salidas:               udi28bd
+  private_key_albaranes_pedido:      7ds8hwj
+  private_key_albaranes_entrada:     huu2dk2
+  private_key_albaranes_salida:      jds8nn1
+  private_key_albaranes_venta:       0n2u7bb
+
+# Rutas de las imagenes para el ajax
+  ajax_func: http://sgum.lcdc.es/web/images/
+  
+# Rutas de las imagenes de los usuarios
+  fotos_usuarios: /homez.342/lacuevad/sandbox/sgum/web/images/usuarios
+
+# Rutas de las imagenes de los articulos
+  imagen_articulos: /homez.342/lacuevad/sandbox/sgum/web/images/articulos
+  
+# Rutas de los informes pedidos
+  informes_pedidos:  /homez.342/lacuevad/sandbox/sgum/web/informes/pedidos/
+
+# Rutas de los informes ventas
+  informes_ventas: /homez.342/lacuevad/sandbox/sgum/web/informes/ventas/
+  
+# Rutas de los informes entradas
+  informes_entradas: /homez.342/lacuevad/sandbox/sgum/web/informes/entradas/
+  
+# Rutas de los informes salidas
+  informes_salidas: /homez.342/lacuevad/sandbox/sgum/web/informes/salidas/
+  
+# Ruta del manual de usuario
+  manual_usuario: /homez.342/lacuevad/sandbox/sgum/web/uploads/ManualUsuario.pdf
+
+# Ruta de las imagenes del manual de usuario
+  imagenes_manual_usuario: /homez.342/lacuevad/sandbox/sgum/web/images/manual/
+  
+# Informes
+  tcpdf: lib\tcpdf\tcpdf.php
+  tcpdf_image:  sgum.jpg
+  tcpdf_image_width: 40
+  ruta_mostrar_informe: http://sgum.lcdc.es/web/informes/
+  
+#javascript
+  javascript_func: http://sgum.lcdc.es/web/js/common.js

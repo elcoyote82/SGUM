@@ -1,0 +1,34 @@
+# Acción para la Administración de Articulos
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar un Articulo
+agregarArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+
+# Acción para Borrar un Articulo
+borrarArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para buscar un Articulo
+buscarArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+
+# Acción para buscar la ubicacion de un Articulo
+buscarUbicacionArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Editar un Articulo
+editarArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver la Ficha de un Articulo
+verArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

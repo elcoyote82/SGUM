@@ -1,0 +1,44 @@
+sfGuardUser:
+  admin:
+    username:       admin
+    password:       1234567
+    is_super_admin: false
+    id_md5:         abe5b055044856fbd96418b51a83dca8
+
+sfGuardPermission:
+  Administrador:
+    name:           Administrador
+    description:    Permiso de Administrador
+    id_md5:         c794603536d8651aa28372ab636a5bd1
+
+sfGuardGroup:
+  Administradores:
+    name:           Administradores
+    description:    Grupo de los Administradores
+    id_md5:         ed098d029d1f5011652de54e1ec6c346
+    
+sfGuardUserPermission:
+  admin:
+    user_id:        admin
+    permission_id:  Administrador
+
+sfGuardGroupPermission:
+  admin:
+    group_id:       Administradores
+    permission_id:  Administrador
+
+sfGuardUserGroup:
+  admin:
+    group_id:       Administradores
+    user_id:        admin
+    
+SfGuardUserProfile:
+  admin:
+    id_md5:         d66a3c8fd5d4795b6eed9e6236025496
+    user_id:        admin
+    nombre:         Administrador
+    apellidos:      Admin
+    telefono:       ''
+    email:          ''
+    imagen:         ''
+    idioma:         ''    

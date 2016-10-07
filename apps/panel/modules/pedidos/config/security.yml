@@ -1,0 +1,109 @@
+# Acción index del modulo Pedido
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Administrar los Pedidos
+administrarPedidos:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar un Articulo al Pedido
+agregarArticuloPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar un Pedido
+agregarPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Bajar la cantidad de un Articulo en un Pedido
+bajarCantidadArticuloPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para borrar un Articulo en un Pedido
+borrarArticuloPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para borrar un Pedido
+borrarPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para buscar un Articulo en un Pedido
+buscarArticuloPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para buscar un Proveedor en un Pedido
+buscarProveedorArticulo:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Comprobar un Pedido Completo
+comprobarPedidoCompleto:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Confirmar un Pedido Recibido
+confirmarPedidoRecibido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Confirmar un Pedido
+confirmarPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Editar un Pedido
+editarPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Generar un Pedido
+generarPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar los Pedidos Completos
+pedidosCompletos:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar los Pedidos En Proceso
+pedidosEnProceso:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar los Pedidos Pendientes
+pedidosPendientes:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar los Pedidos Procesados
+pedidosProcesados:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar los Pedidos Recibidos
+pedidosRecibidos:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Subir la cantidad de un Articulo en un Pedido
+subirCantidadArticuloPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para ver la Ficha de un Pedido
+verPedidoCompleto:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para ver la Ficha Completa de un Pedido
+verPedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

@@ -1,0 +1,2 @@
+<p><?php echo __("En el módulo de pedidos se listarán los pedidos de mercancías dependiendo del estado en el que se encuentren. Además las acciones a ejecutar sobre los pedidos se diferenciaran según el estado del pedido."); ?></p>
+<p><?php echo __("Desde el submenú podremos escoger las diferentes opciones."); ?></p>

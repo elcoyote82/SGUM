@@ -1,0 +1,15 @@
+fields:
+  nombre:
+    required:
+      msg: El campo nombre no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+  apellidos:
+    required:
+      msg: El campo apellidos no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+fillin:
+  enabled: true

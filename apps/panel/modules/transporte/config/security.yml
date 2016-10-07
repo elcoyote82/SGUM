@@ -1,0 +1,49 @@
+# Acción index
+index:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+  
+# Acción para Administrar Transporte Empresa
+administrarTransporteEmpresas:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Agregar un Conductor
+agregarTransporteConductor:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Agregar una Empresa de Transporte
+agregarTransporteEmpresa:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Borrar un Conductor
+borrarTransporteConductor:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Borrar una Empresa de Transporte
+borrarTransporteEmpresa:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Editar un Conductor
+editarTransporteConductor:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Editar una Empresa de Transporte
+editarTransporteEmpresa:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Ver la Ficha de un Conductor
+verTransporteConductor:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Ver la Ficha de una Empresa de Transporte
+verTransporteEmpresa:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]

@@ -1,0 +1,8 @@
+fields:
+  grupo:
+    sfRegexValidator:
+      match:        No
+      match_error:  Debe asignar un grupo para el usuario.
+      pattern:      /^0$/
+fillin:
+  enabled: true

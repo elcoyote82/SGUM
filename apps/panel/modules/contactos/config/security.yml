@@ -1,0 +1,39 @@
+# Acción para la Administración de Contactos
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para la Administración de Contactos de los Clientes
+administrarContactosClientes:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para la Administración de Contactos de los Proveedores
+administrarContactosProveedores:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para Agregar un Contacto
+agregarContacto:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+
+# Acción para Borrar un Contacto
+borrarContacto:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para editar un Contacto
+editarContacto:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para obtener el jefe de un Contacto
+obtenerJefe:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para Ver la Ficha de un Contacto
+verContacto:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]

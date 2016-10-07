@@ -1,0 +1,24 @@
+# Acción para la Administración de Familias
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar una Familia
+agregarFamilia:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+
+# Acción para Borrar una Familia
+borrarFamilia:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Editar una Familia
+editarFamilia:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver la Ficha de una Familia
+verFamilia:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

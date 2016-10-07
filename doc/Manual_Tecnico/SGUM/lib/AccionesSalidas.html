@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesSalidas</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesSalidas</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con las salidas</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesSalidas.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesSalidas.class.php.html">/lib/AccionesSalidas.class.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																								<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesSalidas</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarEstadoSalida" title="details" class="method-name">actualizarEstadoSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarLineaSalida" title="details" class="method-name">actualizarLineaSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulos_x_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarArticulosXLote" title="details" class="method-name">borrarArticulosXLote</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#generarInformeSalida" title="details" class="method-name">generarInformeSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#guardarArticulosXLote" title="details" class="method-name">guardarArticulosXLote</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#guardarLineaSalida" title="details" class="method-name">guardarLineaSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#guardarLineaSalida2" title="details" class="method-name">guardarLineaSalida2</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#guardarSalida" title="details" class="method-name">guardarSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_venta</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdSalidaXIdMd5" title="details" class="method-name">obtenerIdSalidaXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdSalidaXIdVenta" title="details" class="method-name">obtenerIdSalidaXIdVenta</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_venta</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdVentaXIdSalida" title="details" class="method-name">obtenerIdVentaXIdSalida</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerLineasSalidaXIdSalida" title="details" class="method-name">obtenerLineasSalidaXIdSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjSalida" title="details" class="method-name">obtenerObjSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerObjSalidaXIdMd5Albaran" title="details" class="method-name">obtenerObjSalidaXIdMd5Albaran</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_albaran</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">17</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesSalidas</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesSalidas</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarEstadoSalida" id="actualizarEstadoSalida"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoSalida</span> (line <span class="line-number">397</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizar el estado de la salida según el valor pasado como parámetro</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarEstadoSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id de la Salida</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_salida</span><span class="var-description">: Id del estado_salida                                          (1-Pendiente,2-Procesada)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarLineaSalida" id="actualizarLineaSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarLineaSalida</span> (line <span class="line-number">156</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizar una linea de salida</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarLineaSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulos_x_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulos_x_salida</span><span class="var-description">: Id de la linea de salida</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id Ubicacion</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$lote</span><span class="var-description">: Lote</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarArticulosXLote" id="borrarArticulosXLote"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarArticulosXLote</span> (line <span class="line-number">198</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar Articulos_X_Lote</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarArticulosXLote
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id Ubicacion</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$lote</span><span class="var-description">: Lote</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgenerarInformeSalida" id="generarInformeSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">generarInformeSalida</span> (line <span class="line-number">423</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generamos el informe de la salida</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			generarInformeSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id de la salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarArticulosXLote" id="guardarArticulosXLote"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarArticulosXLote</span> (line <span class="line-number">177</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar Articulos_X_Lote</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			guardarArticulosXLote
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id Ubicacion</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$lote</span><span class="var-description">: Lote</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarLineaSalida" id="guardarLineaSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarLineaSalida</span> (line <span class="line-number">87</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar una linea de salida</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			guardarLineaSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id de la salida</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarLineaSalida2" id="guardarLineaSalida2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarLineaSalida2</span> (line <span class="line-number">121</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar una linea de salida</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			guardarLineaSalida2
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$lote</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id de la salida</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$lote</span><span class="var-description">: Lote del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id ubiaccion del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarSalida" id="guardarSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarSalida</span> (line <span class="line-number">29</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar una salida</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			guardarSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_venta</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_venta</span><span class="var-description">: Id del venta</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_conductor</span><span class="var-description">: Id del conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdSalidaXIdMd5" id="obtenerIdSalidaXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdSalidaXIdMd5</span> (line <span class="line-number">340</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id de la salida a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id de la salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdSalidaXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_salida</span><span class="var-description">: Id Md5 de la salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdSalidaXIdVenta" id="obtenerIdSalidaXIdVenta"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdSalidaXIdVenta</span> (line <span class="line-number">237</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id de la salida a partir del Id de venta</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id de la salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdSalidaXIdVenta
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_venta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_venta</span><span class="var-description">: Id del venta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdVentaXIdSalida" id="obtenerIdVentaXIdSalida"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdVentaXIdSalida</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del venta a partir del Id de salida</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del venta</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdVentaXIdSalida
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id de la salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerLineasSalidaXIdSalida" id="obtenerLineasSalidaXIdSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerLineasSalidaXIdSalida</span> (line <span class="line-number">315</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener las lineas de una salida a través del Id de Salida</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array con todas las lineas de salida para ese id de salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerLineasSalidaXIdSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id de Salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjSalida" id="obtenerObjSalida"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjSalida</span> (line <span class="line-number">292</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Salida a partir del id de salida</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_salida    Objeto Salida buscado por el id de la salida,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_salida</span><span class="var-description">: Id del salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjSalidaXIdMd5Albaran" id="obtenerObjSalidaXIdMd5Albaran"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjSalidaXIdMd5Albaran</span> (line <span class="line-number">368</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Objeto salida a partir del Id Md5 del Albaran</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerObjSalidaXIdMd5Albaran
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_albaran</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_albaran</span><span class="var-description">: Id Md5 del albaran</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:47 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

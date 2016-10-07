@@ -1,0 +1,4757 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Administracion</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Administracion</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para controlar la administración de usuarios, grupos y permisos</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> Administracion.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---Administracion.class.php.html">/lib/Administracion.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$id_ult_grupo_insert" title="details" class="var-name">$id_ult_grupo_insert</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$id_ult_perm_insert" title="details" class="var-name">$id_ult_perm_insert</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$id_ult_profile_insert" title="details" class="var-name">$id_ult_profile_insert</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">integer</span>
+					<a href="#$id_ult_user_insert" title="details" class="var-name">$id_ult_user_insert</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Administracion</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarEstadoEntrada" title="details" class="method-name">actualizarEstadoEntrada</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_entrada</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarEstadoPedido" title="details" class="method-name">actualizarEstadoPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarEstadoSalida" title="details" class="method-name">actualizarEstadoSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarEstadoUbicacion" title="details" class="method-name">actualizarEstadoUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarEstadoVenta" title="details" class="method-name">actualizarEstadoVenta</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_venta</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarFechaTiempoUltimaActualizacion" title="details" class="method-name">actualizarFechaTiempoUltimaActualizacion</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ultima_actualizacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarGrupo" title="details" class="method-name">actualizarGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarNumerosAlbaran" title="details" class="method-name">actualizarNumerosAlbaran</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$id_numero_albaran</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$numero_albaran</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarPassword" title="details" class="method-name">actualizarPassword</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarPermiso" title="details" class="method-name">actualizarPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarProfile" title="details" class="method-name">actualizarProfile</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_profile</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$userid</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarTiempoTareaProgramada" title="details" class="method-name">actualizarTiempoTareaProgramada</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tiempo_repeticion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarUserGroup" title="details" class="method-name">actualizarUserGroup</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarEstadoEntrada" title="details" class="method-name">borrarEstadoEntrada</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarEstadoPedido" title="details" class="method-name">borrarEstadoPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarEstadoSalida" title="details" class="method-name">borrarEstadoSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarEstadoUbicacion" title="details" class="method-name">borrarEstadoUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarEstadoVenta" title="details" class="method-name">borrarEstadoVenta</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarGrupo" title="details" class="method-name">borrarGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarPermiso" title="details" class="method-name">borrarPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarUsuario" title="details" class="method-name">borrarUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarEstadoEntrada" title="details" class="method-name">comprobarEstadoEntrada</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarEstadoPedido" title="details" class="method-name">comprobarEstadoPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarEstadoSalida" title="details" class="method-name">comprobarEstadoSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarEstadoVenta" title="details" class="method-name">comprobarEstadoVenta</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarGruposPermiso" title="details" class="method-name">comprobarGruposPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarUsuario" title="details" class="method-name">comprobarUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarUsuariosGrupo" title="details" class="method-name">comprobarUsuariosGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarUsuariosPermiso" title="details" class="method-name">comprobarUsuariosPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarEstadoEntrada" title="details" class="method-name">guardarEstadoEntrada</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_entrada</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarEstadoPedido" title="details" class="method-name">guardarEstadoPedido</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarEstadoSalida" title="details" class="method-name">guardarEstadoSalida</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarEstadoUbicacion" title="details" class="method-name">guardarEstadoUbicacion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarEstadoVenta" title="details" class="method-name">guardarEstadoVenta</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_venta</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarGroupPermission" title="details" class="method-name">guardarGroupPermission</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarGrupo" title="details" class="method-name">guardarGrupo</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarPermiso" title="details" class="method-name">guardarPermiso</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarProfile" title="details" class="method-name">guardarProfile</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$imagen</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$idioma</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarUserGroup" title="details" class="method-name">guardarUserGroup</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarUserPermission" title="details" class="method-name">guardarUserPermission</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#guardarUsuario" title="details" class="method-name">guardarUsuario</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerDescripcionGrupo" title="details" class="method-name">obtenerDescripcionGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerDescripcionPermiso" title="details" class="method-name">obtenerDescripcionPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdGrupoXIdMd5" title="details" class="method-name">obtenerIdGrupoXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdGrupoXIdPermiso" title="details" class="method-name">obtenerIdGrupoXIdPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdGrupoXIdUsuario" title="details" class="method-name">obtenerIdGrupoXIdUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdGrupoXObjGroupPermission" title="details" class="method-name">obtenerIdGrupoXObjGroupPermission</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$obj_grouppermission</span>, <span class="var-type">objeto</span>&nbsp;<span class="var-name">$usergroup</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdGrupoXObjUserGroup" title="details" class="method-name">obtenerIdGrupoXObjUserGroup</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$obj_usergroup</span>, <span class="var-type">objeto</span>&nbsp;<span class="var-name">$usergroup</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Grupo" title="details" class="method-name">obtenerIdMd5Grupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Permiso" title="details" class="method-name">obtenerIdMd5Permiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Profile" title="details" class="method-name">obtenerIdMd5Profile</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_profile</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Usuario" title="details" class="method-name">obtenerIdMd5Usuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdPermisoXIdMd5" title="details" class="method-name">obtenerIdPermisoXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdPermisoXIdUsuario" title="details" class="method-name">obtenerIdPermisoXIdUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdPermisoXObjUserPermission" title="details" class="method-name">obtenerIdPermisoXObjUserPermission</a>
+											(<span class="var-type">objeto</span>&nbsp;<span class="var-name">$obj_userpermission</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdProfileXIdMd5" title="details" class="method-name">obtenerIdProfileXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdUsuarioXIdMd5" title="details" class="method-name">obtenerIdUsuarioXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreGrupo" title="details" class="method-name">obtenerNombreGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombrePermiso" title="details" class="method-name">obtenerNombrePermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#obtenerObjConfTareaProgramada" title="details" class="method-name">obtenerObjConfTareaProgramada</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjEstadoEntrada" title="details" class="method-name">obtenerObjEstadoEntrada</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjEstadoPedido" title="details" class="method-name">obtenerObjEstadoPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjEstadoSalida" title="details" class="method-name">obtenerObjEstadoSalida</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjEstadoUbicacion" title="details" class="method-name">obtenerObjEstadoUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjEstadoVenta" title="details" class="method-name">obtenerObjEstadoVenta</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjGroupPermissionXIdGrupo" title="details" class="method-name">obtenerObjGroupPermissionXIdGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjGroupPermissionXIdPermiso" title="details" class="method-name">obtenerObjGroupPermissionXIdPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjGrupo" title="details" class="method-name">obtenerObjGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjGrupoXIdMd5" title="details" class="method-name">obtenerObjGrupoXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjNumeroAlbaran" title="details" class="method-name">obtenerObjNumeroAlbaran</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_numero_albaran</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjPermiso" title="details" class="method-name">obtenerObjPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjPermisoXIdMd5" title="details" class="method-name">obtenerObjPermisoXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjProfile" title="details" class="method-name">obtenerObjProfile</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_profile</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjProfileXIdMd5" title="details" class="method-name">obtenerObjProfileXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjProfileXIdUsuario" title="details" class="method-name">obtenerObjProfileXIdUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjUserGroupXIdUsuario" title="details" class="method-name">obtenerObjUserGroupXIdUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjUserPermissionXIdUsuario" title="details" class="method-name">obtenerObjUserPermissionXIdUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjUsuario" title="details" class="method-name">obtenerObjUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjUsuarioXIdMd5" title="details" class="method-name">obtenerObjUsuarioXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoEntradas" title="details" class="method-name">obtenerSelectEstadoEntradas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoEntradas2" title="details" class="method-name">obtenerSelectEstadoEntradas2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoEntradas3" title="details" class="method-name">obtenerSelectEstadoEntradas3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoPedidos" title="details" class="method-name">obtenerSelectEstadoPedidos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoPedidos2" title="details" class="method-name">obtenerSelectEstadoPedidos2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoPedidos3" title="details" class="method-name">obtenerSelectEstadoPedidos3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoPedidosPendientes" title="details" class="method-name">obtenerSelectEstadoPedidosPendientes</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoSalidas" title="details" class="method-name">obtenerSelectEstadoSalidas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoSalidas2" title="details" class="method-name">obtenerSelectEstadoSalidas2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoSalidas3" title="details" class="method-name">obtenerSelectEstadoSalidas3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoUbicaciones" title="details" class="method-name">obtenerSelectEstadoUbicaciones</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoUbicaciones1" title="details" class="method-name">obtenerSelectEstadoUbicaciones1</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoUbicaciones2" title="details" class="method-name">obtenerSelectEstadoUbicaciones2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoUbicaciones3" title="details" class="method-name">obtenerSelectEstadoUbicaciones3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoVentas" title="details" class="method-name">obtenerSelectEstadoVentas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoVentas2" title="details" class="method-name">obtenerSelectEstadoVentas2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectEstadoVentas3" title="details" class="method-name">obtenerSelectEstadoVentas3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectGrupos" title="details" class="method-name">obtenerSelectGrupos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectGrupos2" title="details" class="method-name">obtenerSelectGrupos2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectGrupos3" title="details" class="method-name">obtenerSelectGrupos3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectPermisos" title="details" class="method-name">obtenerSelectPermisos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectPermisos2" title="details" class="method-name">obtenerSelectPermisos2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectPermisos3" title="details" class="method-name">obtenerSelectPermisos3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTiempoRepeticion" title="details" class="method-name">obtenerSelectTiempoRepeticion</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectUsuarios" title="details" class="method-name">obtenerSelectUsuarios</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectUsuarios2" title="details" class="method-name">obtenerSelectUsuarios2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectUsuarios3" title="details" class="method-name">obtenerSelectUsuarios3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosEstadoEntradas" title="details" class="method-name">obtenerTodosEstadoEntradas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosEstadoPedidos" title="details" class="method-name">obtenerTodosEstadoPedidos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosEstadoSalidas" title="details" class="method-name">obtenerTodosEstadoSalidas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosEstadoUbicaciones" title="details" class="method-name">obtenerTodosEstadoUbicaciones</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosEstadoVentas" title="details" class="method-name">obtenerTodosEstadoVentas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosEstadoVentas" title="details" class="method-name">obtenerTodosEstadoVentas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosGrupos" title="details" class="method-name">obtenerTodosGrupos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosPermisos" title="details" class="method-name">obtenerTodosPermisos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosUsuarios" title="details" class="method-name">obtenerTodosUsuarios</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerUltimoIdGrupo" title="details" class="method-name">obtenerUltimoIdGrupo</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerUltimoIdPermiso" title="details" class="method-name">obtenerUltimoIdPermiso</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerUltimoIdProfile" title="details" class="method-name">obtenerUltimoIdProfile</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerUltimoIdUsuario" title="details" class="method-name">obtenerUltimoIdUsuario</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerUpdatedGrupo" title="details" class="method-name">obtenerUpdatedGrupo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerUpdatedPermiso" title="details" class="method-name">obtenerUpdatedPermiso</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerUpdatedUsuario" title="details" class="method-name">obtenerUpdatedUsuario</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerUserIdXIdProfile" title="details" class="method-name">obtenerUserIdXIdProfile</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_profile</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerUserName" title="details" class="method-name">obtenerUserName</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerValorNumeroAlbaran" title="details" class="method-name">obtenerValorNumeroAlbaran</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_numero_albaran</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$id_ult_grupo_insert" id="$id_ult_grupo_insert"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$id_ult_grupo_insert</span>
+						(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Identificador del ultimo grupo insertado</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$id_ult_perm_insert" id="$id_ult_perm_insert"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$id_ult_perm_insert</span>
+						(line <span class="line-number">26</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Identificador del ultimo permiso insertado</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$id_ult_profile_insert" id="$id_ult_profile_insert"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$id_ult_profile_insert</span>
+						(line <span class="line-number">31</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Identificador del ultimo profile insertado</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$id_ult_user_insert" id="$id_ult_user_insert"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$id_ult_user_insert</span>
+						(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Identificador del ultimo usuario insertado</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">37</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase Administracion</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Administracion</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarEstadoEntrada" id="actualizarEstadoEntrada"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoEntrada</span> (line <span class="line-number">2138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un Estado Entrada de la tabla Estados Entradas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarEstadoEntrada
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_entrada</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_entrada</span><span class="var-description">: Id del Estado Entrada</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_entrada</span><span class="var-description">: Nombre del Estado Entrada</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarEstadoPedido" id="actualizarEstadoPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoPedido</span> (line <span class="line-number">1900</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un Estado Pedido de la tabla Estados Pedidos</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarEstadoPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_pedido</span><span class="var-description">: Id del Estado Pedido</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_pedido</span><span class="var-description">: Nombre del Estado Pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarEstadoSalida" id="actualizarEstadoSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoSalida</span> (line <span class="line-number">2347</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un Estado Salida de la tabla Estados Salidas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarEstadoSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_salida</span><span class="var-description">: Id del Estado Salida</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_salida</span><span class="var-description">: Nombre del Estado Salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarEstadoUbicacion" id="actualizarEstadoUbicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoUbicacion</span> (line <span class="line-number">2765</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un Estado Ubicacion de la tabla Estados Ubicaciones</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarEstadoUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_ubicacion</span><span class="var-description">: Id del Estado Ubicacion</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_ubicacion</span><span class="var-description">: Nombre del Estado Ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarEstadoVenta" id="actualizarEstadoVenta"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoVenta</span> (line <span class="line-number">2556</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un Estado Venta de la tabla Estados Ventas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarEstadoVenta
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$estado_venta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_venta</span><span class="var-description">: Id del Estado Venta</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_venta</span><span class="var-description">: Nombre del Estado Venta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarFechaTiempoUltimaActualizacion" id="actualizarFechaTiempoUltimaActualizacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarFechaTiempoUltimaActualizacion</span> (line <span class="line-number">2989</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos el valor de la fecha de ultima actualizacion de la tarea programada</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarFechaTiempoUltimaActualizacion
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ultima_actualizacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ultima_actualizacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarGrupo" id="actualizarGrupo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarGrupo</span> (line <span class="line-number">495</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un grupo de la tabla sfGuardGroup</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del Grupo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nuevo Nombre del grupo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$descripcion</span><span class="var-description">: Nueva Descripcion del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarNumerosAlbaran" id="actualizarNumerosAlbaran"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarNumerosAlbaran</span> (line <span class="line-number">3027</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos el valor de los numeros de Albaran</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarNumerosAlbaran
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$id_numero_albaran</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$numero_albaran</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_numero_albaran</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$numero_albaran</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarPassword" id="actualizarPassword"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarPassword</span> (line <span class="line-number">114</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos el Password de un usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarPassword
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: Nuevo Password del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarPermiso" id="actualizarPermiso"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarPermiso</span> (line <span class="line-number">874</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un permiso de la tabla sfGuardPermission</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del Permiso</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nuevo Nombre del permiso</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$descripcion</span><span class="var-description">: Nueva Descripcion del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarProfile" id="actualizarProfile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarProfile</span> (line <span class="line-number">1255</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un objeto profile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True si se ha actualizado correctamente, False en caso contario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarProfile
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_profile</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$userid</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_profile</span><span class="var-description">: Id del profile a actualizar</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$userid</span><span class="var-description">: Identificador del user</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apellidos</span><span class="var-description">: Apellidos del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Telefono del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarTiempoTareaProgramada" id="actualizarTiempoTareaProgramada"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarTiempoTareaProgramada</span> (line <span class="line-number">2973</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos el valor del tiempo de repeticion de la tarea programada</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarTiempoTareaProgramada
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tiempo_repeticion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tiempo_repeticion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarUserGroup" id="actualizarUserGroup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarUserGroup</span> (line <span class="line-number">1470</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un objeto de la tabla sfGuardUserGroup</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True si se ha guardado correctamente, False en caso contario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarUserGroup
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarEstadoEntrada" id="borrarEstadoEntrada"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarEstadoEntrada</span> (line <span class="line-number">2156</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Estado Entrada de la tabla Estados Entradas</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarEstadoEntrada
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_entrada</span><span class="var-description">: Id del Estado Entrada a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarEstadoPedido" id="borrarEstadoPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarEstadoPedido</span> (line <span class="line-number">1918</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Estado Pedido de la tabla Estados Pedidos</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarEstadoPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_pedido</span><span class="var-description">: Id del Estado Pedido a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarEstadoSalida" id="borrarEstadoSalida"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarEstadoSalida</span> (line <span class="line-number">2365</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Estado Salida de la tabla Estados Salidas</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarEstadoSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_salida</span><span class="var-description">: Id del Estado Salida a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarEstadoUbicacion" id="borrarEstadoUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarEstadoUbicacion</span> (line <span class="line-number">2783</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Estado Ubicacion de la tabla Estados Ubicaciones</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarEstadoUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_ubicacion</span><span class="var-description">: Id del Estado Ubicacion a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarEstadoVenta" id="borrarEstadoVenta"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarEstadoVenta</span> (line <span class="line-number">2574</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Estado Venta de la tabla Estados Ventas</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarEstadoVenta
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_venta</span><span class="var-description">: Id del Estado Venta a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarGrupo" id="borrarGrupo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarGrupo</span> (line <span class="line-number">514</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Grupo de la tabla sfGuardGroup</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarPermiso" id="borrarPermiso"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarPermiso</span> (line <span class="line-number">893</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Permiso de la tabla sfGuardPermission</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del Permiso a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarUsuario" id="borrarUsuario"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarUsuario</span> (line <span class="line-number">162</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un Usuario de la tabla sfGuardUser</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarEstadoEntrada" id="comprobarEstadoEntrada"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarEstadoEntrada</span> (line <span class="line-number">2290</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un estado entrada esta siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarEstadoEntrada
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_entrada</span><span class="var-description">: Id del estado entrada</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarEstadoPedido" id="comprobarEstadoPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarEstadoPedido</span> (line <span class="line-number">2081</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un estado pedido esta siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarEstadoPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_pedido</span><span class="var-description">: Id del estado pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarEstadoSalida" id="comprobarEstadoSalida"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarEstadoSalida</span> (line <span class="line-number">2499</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un estado salida esta siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarEstadoSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_salida</span><span class="var-description">: Id del estado salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarEstadoVenta" id="comprobarEstadoVenta"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarEstadoVenta</span> (line <span class="line-number">2708</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un estado venta esta siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarEstadoVenta
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_venta</span><span class="var-description">: Id del estado venta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarGruposPermiso" id="comprobarGruposPermiso"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarGruposPermiso</span> (line <span class="line-number">1841</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un permiso tiene grupos asignados</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si tiene grupos asignados, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarGruposPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarUsuario" id="comprobarUsuario"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarUsuario</span> (line <span class="line-number">134</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un usuario está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarUsuariosGrupo" id="comprobarUsuariosGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarUsuariosGrupo</span> (line <span class="line-number">1566</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un grupo tiene usuarios asignados</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si tiene usuarios asignados, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarUsuariosGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarUsuariosPermiso" id="comprobarUsuariosPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarUsuariosPermiso</span> (line <span class="line-number">1690</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un permiso tiene usuarios asignados</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si tiene usuarios asignados, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarUsuariosPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarEstadoEntrada" id="guardarEstadoEntrada"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarEstadoEntrada</span> (line <span class="line-number">2108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Estado Entrada</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del Estado Entrada guardado, o FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarEstadoEntrada
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_entrada</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_entrada</span><span class="var-description">: Nombre del Estado Entrada</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarEstadoPedido" id="guardarEstadoPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarEstadoPedido</span> (line <span class="line-number">1870</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Estado Pedido</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del Estado Pedido guardado, o FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarEstadoPedido
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_pedido</span><span class="var-description">: Nombre del Estado Pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarEstadoSalida" id="guardarEstadoSalida"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarEstadoSalida</span> (line <span class="line-number">2317</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Estado Salida</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del Estado Salida guardado, o FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarEstadoSalida
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_salida</span><span class="var-description">: Nombre del Estado Salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarEstadoUbicacion" id="guardarEstadoUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarEstadoUbicacion</span> (line <span class="line-number">2735</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Estado Ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del Estado Ubicacion guardado, o FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarEstadoUbicacion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_ubicacion</span><span class="var-description">: Nombre del Estado Ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarEstadoVenta" id="guardarEstadoVenta"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarEstadoVenta</span> (line <span class="line-number">2526</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Estado Venta</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del Estado Venta guardado, o FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarEstadoVenta
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$estado_venta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$estado_venta</span><span class="var-description">: Nombre del Estado Venta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarGroupPermission" id="guardarGroupPermission"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarGroupPermission</span> (line <span class="line-number">1721</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardamos un objeto sfGuardGroupPermission</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si se ha salvado correctamente, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarGroupPermission
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso asignado al grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarGrupo" id="guardarGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarGrupo</span> (line <span class="line-number">432</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto sfGuardGroup, se almacena el id del ultimo grupo insertado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si toda ha ido correctamente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarGrupo
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del grupo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$descripcion</span><span class="var-description">: Descripción del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarPermiso" id="guardarPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarPermiso</span> (line <span class="line-number">811</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto sfGuardPermission, se almacena el id del ultimo grupo insertado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si toda ha ido correctamente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarPermiso
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$descripcion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del permiso</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$descripcion</span><span class="var-description">: Descripción del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarProfile" id="guardarProfile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarProfile</span> (line <span class="line-number">1194</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardamos el perfil del usuario, un nuevo objeto SfGuardUserProfile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarProfile
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$imagen</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$idioma</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario del perfil</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apellidos</span><span class="var-description">: Apellidos del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$imagen</span><span class="var-description">: Ruta de la imagen del usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$idioma</span><span class="var-description">: Idioma y cultura del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarUserGroup" id="guardarUserGroup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarUserGroup</span> (line <span class="line-number">1449</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardamos un objeto sfGuarduserGroup</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si se ha salvado correctamente, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarUserGroup
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo al que pertenece</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarUserPermission" id="guardarUserPermission"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarUserPermission</span> (line <span class="line-number">1597</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardamos un objeto sfGuardUserPermission</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si se ha salvado correctamente, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarUserPermission
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permisos asignado al usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarUsuario" id="guardarUsuario"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarUsuario</span> (line <span class="line-number">52</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardamos un objeto sfGuardUser</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			guardarUsuario
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: Nombre de usuario</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: Contraseña del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerDescripcionGrupo" id="obtenerDescripcionGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerDescripcionGrupo</span> (line <span class="line-number">678</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener la descripción del Grupo a partir del id del grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Descripción del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerDescripcionGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerDescripcionPermiso" id="obtenerDescripcionPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerDescripcionPermiso</span> (line <span class="line-number">1057</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener la descripción del Permiso a partir del id del permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Descripción del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerDescripcionPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdGrupoXIdMd5" id="obtenerIdGrupoXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdGrupoXIdMd5</span> (line <span class="line-number">624</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del grupo a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdGrupoXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdGrupoXIdPermiso" id="obtenerIdGrupoXIdPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdGrupoXIdPermiso</span> (line <span class="line-number">1817</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del Grupo a partir del Id del Permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del grupo que tiene ese permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdGrupoXIdPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdGrupoXIdUsuario" id="obtenerIdGrupoXIdUsuario"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdGrupoXIdUsuario</span> (line <span class="line-number">1542</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del Grupo a partir del Id del usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del grupo al que pertenece el usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdGrupoXIdUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdGrupoXObjGroupPermission" id="obtenerIdGrupoXObjGroupPermission"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdGrupoXObjGroupPermission</span> (line <span class="line-number">1795</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Grupo a partir de un objeto sfGuardGroupPermission</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdGrupoXObjGroupPermission
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$obj_grouppermission</span>, <span class="var-type">objeto</span>&nbsp;<span class="var-name">$usergroup</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">objeto</span>
+				<span class="var-name">$usergroup</span><span class="var-description">: Objeto sfGuardGroupPermission</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$obj_grouppermission</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdGrupoXObjUserGroup" id="obtenerIdGrupoXObjUserGroup"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdGrupoXObjUserGroup</span> (line <span class="line-number">1520</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Grupo a partir de un objeto sfGuarUserGroup</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdGrupoXObjUserGroup
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$obj_usergroup</span>, <span class="var-type">objeto</span>&nbsp;<span class="var-name">$usergroup</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">objeto</span>
+				<span class="var-name">$usergroup</span><span class="var-description">: Objeto sfGuardUserGroup</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$obj_usergroup</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Grupo" id="obtenerIdMd5Grupo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Grupo</span> (line <span class="line-number">598</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el IdMd5 del Grupo a partir del id del grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Grupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Permiso" id="obtenerIdMd5Permiso"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Permiso</span> (line <span class="line-number">977</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el IdMd5 del Permiso a partir del id del permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Permiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Profile" id="obtenerIdMd5Profile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Profile</span> (line <span class="line-number">1363</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el IdMd5 del Profile a partir del id del profile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del profile</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Profile
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_profile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_profile</span><span class="var-description">: Id del profile</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Usuario" id="obtenerIdMd5Usuario"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Usuario</span> (line <span class="line-number">246</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el IdMd5 del Usuario a partir del id del usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 de usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Usuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdPermisoXIdMd5" id="obtenerIdPermisoXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdPermisoXIdMd5</span> (line <span class="line-number">1003</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del permiso a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdPermisoXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdPermisoXIdUsuario" id="obtenerIdPermisoXIdUsuario"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdPermisoXIdUsuario</span> (line <span class="line-number">1666</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del Permiso a partir del Id del usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del permiso al que pertenece el usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdPermisoXIdUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdPermisoXObjUserPermission" id="obtenerIdPermisoXObjUserPermission"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdPermisoXObjUserPermission</span> (line <span class="line-number">1644</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Permiso a partir de un objeto sfGuardUserPermission</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdPermisoXObjUserPermission
+		</span>
+					(<span class="var-type">objeto</span>&nbsp;<span class="var-name">$obj_userpermission</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">objeto</span>
+				<span class="var-name">$obj_userpermission</span><span class="var-description">: Objeto sfGuardUserPermission</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdProfileXIdMd5" id="obtenerIdProfileXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdProfileXIdMd5</span> (line <span class="line-number">1389</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del profile a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del profile</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdProfileXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del profile</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdUsuarioXIdMd5" id="obtenerIdUsuarioXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdUsuarioXIdMd5</span> (line <span class="line-number">272</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del usuario a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdUsuarioXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreGrupo" id="obtenerNombreGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreGrupo</span> (line <span class="line-number">652</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Nombre del Grupo a partir del id del grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombrePermiso" id="obtenerNombrePermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombrePermiso</span> (line <span class="line-number">1031</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Nombre del Permiso a partir del id del permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombrePermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjConfTareaProgramada" id="obtenerObjConfTareaProgramada"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjConfTareaProgramada</span> (line <span class="line-number">2962</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtenemos el obj de la configuracion de la tarea programada</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			obtenerObjConfTareaProgramada
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerObjEstadoEntrada" id="obtenerObjEstadoEntrada"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjEstadoEntrada</span> (line <span class="line-number">2169</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Estado Entrada a partir del Id del Estado Entrada</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Estado Entrada buscado por el Id del Estado Entrada</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjEstadoEntrada
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_entrada</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_entrada</span><span class="var-description">: Id del Estado Entrada</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjEstadoPedido" id="obtenerObjEstadoPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjEstadoPedido</span> (line <span class="line-number">1931</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Estado Pedido a partir del Id del Estado Pedido</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Estado Pedido buscado por el Id del Estado Pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjEstadoPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_pedido</span><span class="var-description">: Id del Estado Pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjEstadoSalida" id="obtenerObjEstadoSalida"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjEstadoSalida</span> (line <span class="line-number">2378</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Estado Salida a partir del Id del Estado Salida</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Estado Salida buscado por el Id del Estado Salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjEstadoSalida
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_salida</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_salida</span><span class="var-description">: Id del Estado Salida</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjEstadoUbicacion" id="obtenerObjEstadoUbicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjEstadoUbicacion</span> (line <span class="line-number">2796</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Estado Ubicacion a partir del Id del Estado Ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Estado Ubicacion buscado por el Id del Estado Ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjEstadoUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_ubicacion</span><span class="var-description">: Id del Estado Ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjEstadoVenta" id="obtenerObjEstadoVenta"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjEstadoVenta</span> (line <span class="line-number">2587</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Estado Venta a partir del Id del Estado Venta</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Estado Venta buscado por el Id del Estado Venta</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjEstadoVenta
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_venta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_venta</span><span class="var-description">: Id del Estado Venta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjGroupPermissionXIdGrupo" id="obtenerObjGroupPermissionXIdGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjGroupPermissionXIdGrupo</span> (line <span class="line-number">1768</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardGroupPermission a partir del Id del Grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardGroupPermission</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjGroupPermissionXIdGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjGroupPermissionXIdPermiso" id="obtenerObjGroupPermissionXIdPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjGroupPermissionXIdPermiso</span> (line <span class="line-number">1741</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardGroupPermission a partir del Id del permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardGroupPermission</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjGroupPermissionXIdPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjGrupo" id="obtenerObjGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjGrupo</span> (line <span class="line-number">527</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardGroup a partir del id de grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardGroup buscado por el id del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjGrupoXIdMd5" id="obtenerObjGrupoXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjGrupoXIdMd5</span> (line <span class="line-number">572</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardGroup a partir del id de md5 del grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardGroup buscado por el id md5 del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjGrupoXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjNumeroAlbaran" id="obtenerObjNumeroAlbaran"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjNumeroAlbaran</span> (line <span class="line-number">3047</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto numeros de Albaran</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto delos numeros de Albaran</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjNumeroAlbaran
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_numero_albaran</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_numero_albaran</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjPermiso" id="obtenerObjPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjPermiso</span> (line <span class="line-number">906</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardPermission a partir del id de permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardPermission buscado por el id del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjPermisoXIdMd5" id="obtenerObjPermisoXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjPermisoXIdMd5</span> (line <span class="line-number">951</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardPermission a partir del id de md5 del permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardPermission buscado por el id md5 del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjPermisoXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjProfile" id="obtenerObjProfile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjProfile</span> (line <span class="line-number">1289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto SfGuardUserProfile a partir del id de profile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto SfGuardUserProfile buscado por el id del profile</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjProfile
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_profile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_profile</span><span class="var-description">: Id del profile</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjProfileXIdMd5" id="obtenerObjProfileXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjProfileXIdMd5</span> (line <span class="line-number">1312</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto SfGuardUserProfile a partir del id de md5 del profile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto SfGuardUserProfile buscado por el id md5 del profile</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjProfileXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del profile</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjProfileXIdUsuario" id="obtenerObjProfileXIdUsuario"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjProfileXIdUsuario</span> (line <span class="line-number">1338</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto SfGuardUserProfile a partir del id de usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto SfGuardUserProfile buscado por el id de usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjProfileXIdUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del Usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjUserGroupXIdUsuario" id="obtenerObjUserGroupXIdUsuario"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjUserGroupXIdUsuario</span> (line <span class="line-number">1493</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardUserGroup a partir del Id del Usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardUserGroup</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjUserGroupXIdUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjUserPermissionXIdUsuario" id="obtenerObjUserPermissionXIdUsuario"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjUserPermissionXIdUsuario</span> (line <span class="line-number">1617</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardUserPermission a partir del Id del Usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardUserPermission</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjUserPermissionXIdUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjUsuario" id="obtenerObjUsuario"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjUsuario</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardUser a partir del id de usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardUser buscado por el id del usuario, FALSE en caso de que no exista</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjUsuarioXIdMd5" id="obtenerObjUsuarioXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjUsuarioXIdMd5</span> (line <span class="line-number">220</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto sfGuardUser a partir del id de md5 del usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto sfGuardUser buscado por el id md5 del usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjUsuarioXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5</span><span class="var-description">: Id Md5 del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoEntradas" id="obtenerSelectEstadoEntradas"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoEntradas</span> (line <span class="line-number">2214</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Entradas de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Entradas con llave el id del estado entradas y contenido el Nombre del estado entrada</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoEntradas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoEntradas2" id="obtenerSelectEstadoEntradas2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoEntradas2</span> (line <span class="line-number">2239</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Entradas de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Entradas con llave el id del estado entradas y contenido el Nombre del estado entrada</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoEntradas2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoEntradas3" id="obtenerSelectEstadoEntradas3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoEntradas3</span> (line <span class="line-number">2264</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Entradas de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Estado Entrada&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Entradas con llave el id del estado entradas y contenido el Nombre del estado entrada</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoEntradas3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoPedidos" id="obtenerSelectEstadoPedidos"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoPedidos</span> (line <span class="line-number">1976</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Pedidos de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Pedidos con llave el id del estado pedidos y contenido el Nombre del estado pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoPedidos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoPedidos2" id="obtenerSelectEstadoPedidos2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoPedidos2</span> (line <span class="line-number">2001</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Pedidos de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Pedidos con llave el id del estado pedidos y contenido el Nombre del estado pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoPedidos2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoPedidos3" id="obtenerSelectEstadoPedidos3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoPedidos3</span> (line <span class="line-number">2026</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Pedidos de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Estado Pedido&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Pedidos con llave el id del estado pedidos y contenido el Nombre del estado pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoPedidos3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoPedidosPendientes" id="obtenerSelectEstadoPedidosPendientes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoPedidosPendientes</span> (line <span class="line-number">2052</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Pedidos Pendientes, id menor que 5, de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Pedidos con llave el id del estado pedidos y contenido el Nombre del estado pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoPedidosPendientes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoSalidas" id="obtenerSelectEstadoSalidas"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoSalidas</span> (line <span class="line-number">2423</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Salidas de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Salidas con llave el id del estado salidas y contenido el Nombre del estado salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoSalidas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoSalidas2" id="obtenerSelectEstadoSalidas2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoSalidas2</span> (line <span class="line-number">2448</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Salidas de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Salidas con llave el id del estado salidas y contenido el Nombre del estado salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoSalidas2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoSalidas3" id="obtenerSelectEstadoSalidas3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoSalidas3</span> (line <span class="line-number">2473</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Salidas de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Estado Salida&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Salidas con llave el id del estado salidas y contenido el Nombre del estado salida</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoSalidas3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoUbicaciones" id="obtenerSelectEstadoUbicaciones"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoUbicaciones</span> (line <span class="line-number">2841</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ubicaciones de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ubicaciones con llave el id del estado ubicaciones y contenido el Nombre del estado ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoUbicaciones
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoUbicaciones1" id="obtenerSelectEstadoUbicaciones1"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoUbicaciones1</span> (line <span class="line-number">2863</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ubicaciones de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ubicaciones con llave el id del estado ubicaciones y contenido el Nombre del estado ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoUbicaciones1
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoUbicaciones2" id="obtenerSelectEstadoUbicaciones2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoUbicaciones2</span> (line <span class="line-number">2888</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ubicaciones de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ubicaciones con llave el id del estado ubicaciones y contenido el Nombre del estado ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoUbicaciones2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoUbicaciones3" id="obtenerSelectEstadoUbicaciones3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoUbicaciones3</span> (line <span class="line-number">2913</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ubicaciones de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Estado Ubicacion&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ubicaciones con llave el id del estado ubicaciones y contenido el Nombre del estado ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoUbicaciones3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoVentas" id="obtenerSelectEstadoVentas"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoVentas</span> (line <span class="line-number">2632</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ventas de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ventas con llave el id del estado ventas y contenido el Nombre del estado venta</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoVentas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoVentas2" id="obtenerSelectEstadoVentas2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoVentas2</span> (line <span class="line-number">2657</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ventas de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ventas con llave el id del estado ventas y contenido el Nombre del estado venta</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoVentas2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectEstadoVentas3" id="obtenerSelectEstadoVentas3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectEstadoVentas3</span> (line <span class="line-number">2682</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los Estado Ventas de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Estado Venta&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de Estado Ventas con llave el id del estado ventas y contenido el Nombre del estado venta</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectEstadoVentas3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectGrupos" id="obtenerSelectGrupos"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectGrupos</span> (line <span class="line-number">729</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los grupos de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de grupos con llave el id del grupo y contenido el Nombre del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectGrupos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectGrupos2" id="obtenerSelectGrupos2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectGrupos2</span> (line <span class="line-number">754</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los grupos de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de grupos con llave el id del grupo y contenido el Nombre del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectGrupos2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectGrupos3" id="obtenerSelectGrupos3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectGrupos3</span> (line <span class="line-number">779</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los grupos de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Grupo&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de grupos con llave el id del grupo y contenido el Nombre del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectGrupos3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectPermisos" id="obtenerSelectPermisos"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectPermisos</span> (line <span class="line-number">1108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los permisos de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de permisos con llave el id del permiso y contenido el Nombre del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectPermisos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectPermisos2" id="obtenerSelectPermisos2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectPermisos2</span> (line <span class="line-number">1133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los permisos de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de permisos con llave el id del permiso y contenido el Nombre del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectPermisos2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectPermisos3" id="obtenerSelectPermisos3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectPermisos3</span> (line <span class="line-number">1158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los permisos de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Permiso&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de permisos con llave el id del permiso y contenido el Nombre del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectPermisos3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTiempoRepeticion" id="obtenerSelectTiempoRepeticion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTiempoRepeticion</span> (line <span class="line-number">2939</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con los tiempos de repeticion para la tarea programda  ID = 0 -&gt; &quot;5 minutos&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de tiempos de repeticion con llave el tiempo en segundos y contenido el texto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTiempoRepeticion
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectUsuarios" id="obtenerSelectUsuarios"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectUsuarios</span> (line <span class="line-number">351</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los usuarios de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de usuarios con llave el id del usuario y contenido el Nombre del usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectUsuarios
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectUsuarios2" id="obtenerSelectUsuarios2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectUsuarios2</span> (line <span class="line-number">376</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los usuarios de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de usuarios con llave el id del usuario y contenido el Nombre del usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectUsuarios2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectUsuarios3" id="obtenerSelectUsuarios3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectUsuarios3</span> (line <span class="line-number">401</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los usuarios de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Usuario&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de usuarios con llave el id del usuario y contenido el Nombre del usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectUsuarios3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosEstadoEntradas" id="obtenerTodosEstadoEntradas"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosEstadoEntradas</span> (line <span class="line-number">2190</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Estado Entradas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Estado Entradas</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosEstadoEntradas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosEstadoPedidos" id="obtenerTodosEstadoPedidos"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosEstadoPedidos</span> (line <span class="line-number">1952</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Estado Pedidos</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Estado Pedidos</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosEstadoPedidos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosEstadoSalidas" id="obtenerTodosEstadoSalidas"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosEstadoSalidas</span> (line <span class="line-number">2399</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Estado Salidas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Estado Salidas</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosEstadoSalidas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosEstadoUbicaciones" id="obtenerTodosEstadoUbicaciones"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosEstadoUbicaciones</span> (line <span class="line-number">2817</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Estado Ubicaciones</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Estado Ubicaciones</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosEstadoUbicaciones
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosEstadoVentas" id="obtenerTodosEstadoVentas"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosEstadoVentas</span> (line <span class="line-number">3007</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos de la Tabla de Configuracion Num Albaran</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Configuracion Num Albaran</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosEstadoVentas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosEstadoVentas" id="obtenerTodosEstadoVentas"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosEstadoVentas</span> (line <span class="line-number">2608</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Estado Ventas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Estado Ventas</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosEstadoVentas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosGrupos" id="obtenerTodosGrupos"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosGrupos</span> (line <span class="line-number">548</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos sfGuardGroup</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos sfGuardGroup</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosGrupos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosPermisos" id="obtenerTodosPermisos"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosPermisos</span> (line <span class="line-number">927</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos sfGuardPermission</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos sfGuardPermission</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosPermisos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosUsuarios" id="obtenerTodosUsuarios"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosUsuarios</span> (line <span class="line-number">196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos sfGuardUser</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos sfGuardUser</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosUsuarios
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerUltimoIdGrupo" id="obtenerUltimoIdGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUltimoIdGrupo</span> (line <span class="line-number">481</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el ultimo id insertado en la tabla sfGuardGroup</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del ultimo grupo insertado</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerUltimoIdGrupo
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerUltimoIdPermiso" id="obtenerUltimoIdPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUltimoIdPermiso</span> (line <span class="line-number">860</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el ultimo id insertado en la tabla sfGuardPermission</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del ultimo permiso insertado</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerUltimoIdPermiso
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerUltimoIdProfile" id="obtenerUltimoIdProfile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUltimoIdProfile</span> (line <span class="line-number">1276</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el ultimo id insertado en la tabla SfGuardProfile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del ultimo profile insertado</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerUltimoIdProfile
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerUltimoIdUsuario" id="obtenerUltimoIdUsuario"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUltimoIdUsuario</span> (line <span class="line-number">101</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el ultimo id insertado en la tabla sfGuardUser</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del ultimo usuario insertado</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerUltimoIdUsuario
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerUpdatedGrupo" id="obtenerUpdatedGrupo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUpdatedGrupo</span> (line <span class="line-number">704</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener la Fecha de modificación (updated_at) del Grupo a partir del id del grupo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Descripción del grupo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerUpdatedGrupo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_grupo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_grupo</span><span class="var-description">: Id del grupo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerUpdatedPermiso" id="obtenerUpdatedPermiso"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUpdatedPermiso</span> (line <span class="line-number">1083</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener la Fecha de modificación (updated_at) del Permiso a partir del id del permiso</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Descripción del permiso</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerUpdatedPermiso
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_permiso</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_permiso</span><span class="var-description">: Id del permiso</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerUpdatedUsuario" id="obtenerUpdatedUsuario"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUpdatedUsuario</span> (line <span class="line-number">326</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener la Fecha de modificación (updated_at) a partir del id del usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Fecha de modificación del usuario (YYYY-mm-dd H:m:s)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerUpdatedUsuario
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerUserIdXIdProfile" id="obtenerUserIdXIdProfile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUserIdXIdProfile</span> (line <span class="line-number">1417</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el id de usuario a partir del id de profile</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerUserIdXIdProfile
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_profile</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_profile</span><span class="var-description">: Id del profile</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerUserName" id="obtenerUserName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUserName</span> (line <span class="line-number">300</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el UserName a partir del id del usuario</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre de usuario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerUserName
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_usuario</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_usuario</span><span class="var-description">: Id del usuario</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerValorNumeroAlbaran" id="obtenerValorNumeroAlbaran"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerValorNumeroAlbaran</span> (line <span class="line-number">3070</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el valor del numero de labaran segun el id_configuracion_num_albaran</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Valor del numero de alabaran</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerValorNumeroAlbaran
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_numero_albaran</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_numero_albaran</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:49 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

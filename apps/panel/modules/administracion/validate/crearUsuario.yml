@@ -1,0 +1,53 @@
+fields:
+  username:
+    required:
+      msg: El campo nombre de usuario no puede estar vacio.
+    sfPropelUniqueValidator:
+      class:        sfGuardUser
+      column:       username
+      unique_error: Ese nombre de usuario ya existe. Por favor, seleccione otro.     
+  password:
+    required:
+      msg: El campo password no puede estar vacio.
+    sfStringValidator:
+      min: 1
+      min_error: Debe contener al menos 4 caracteres.
+  password2:
+    required:
+      msg: Por favor, vuelve a introducir la contrase&ntilde;a
+    sfStringValidator:
+      min: 1
+      min_error: Debe contener al menos 4 caracteres.
+    sfCompareValidator:
+      check:    password
+      compare_error: Las 2 contrase&ntilde;as deben ser iguales.
+  nombre:
+    required:
+      msg: El campo nombre no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+  apellidos:
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+  email:
+    sfEmailValidator:
+      strict: true
+      email_error: Debe escribir una direccion de mail correcta.
+    sfPropelUniqueValidator:
+      class:        SfGuardUserProfile
+      column:       email
+      unique_error: Esa dirección de correo electrónico ya existe. Por favor, seleccione otro.
+  grupo:
+    sfRegexValidator:
+      match:        No
+      match_error:  Debe asignar un grupo para el usuario.
+      pattern:      /^0$/
+  permiso:
+    sfRegexValidator:
+      match:        No
+      match_error:  Debe asignar un permiso para el usuario.
+      pattern:      /^0$/
+fillin:
+  enabled: true

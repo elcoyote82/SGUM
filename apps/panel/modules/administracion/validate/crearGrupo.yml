@@ -1,0 +1,14 @@
+fields:
+  nombre:
+    required:
+      msg: El campo nombre no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+  permiso:
+    sfRegexValidator:
+      match:        No
+      match_error:  Debe asignar un permiso para el grupo.
+      pattern:      /^0$/
+fillin:
+  enabled: true

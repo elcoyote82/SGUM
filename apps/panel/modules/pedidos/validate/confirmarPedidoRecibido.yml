@@ -1,0 +1,8 @@
+fields:
+  id_transporte_conductor:
+    sfRegexValidator:
+      match:        No
+      match_error:  Debe asignar un conductor a la entrada de mercancías.
+      pattern:      /^0$/
+fillin:
+  enabled: true

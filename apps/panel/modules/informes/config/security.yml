@@ -1,0 +1,44 @@
+# Acción para la Administración de Informes
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para la Administración de Informes de Entradas
+informesEntradas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+
+# Acción para la Administración de Informes de Pedidos
+informesPedidos:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para la Administración de Informes de Salidas
+informesSalidas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para la Administración de Informes de Ventas
+informesVentas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver el Informe de Entrada
+verInformeEntrada:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver el Informe de Pedido
+verInformePedido:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver el Informe de Salida
+verInformeSalida:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver el Informe de Venta
+verInformeVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

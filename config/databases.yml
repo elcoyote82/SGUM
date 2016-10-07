@@ -1,0 +1,5 @@
+all:
+  propel:
+    class:          sfPropelDatabase
+    param:
+      dsn:          mysql://lacuevadsgum:qV86LniN@lacuevadsgum.mysql.db/lacuevadsgum

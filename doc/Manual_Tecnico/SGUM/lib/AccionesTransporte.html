@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesTransporte</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesTransporte</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con las empresas de transporte y conductores</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesTransporte.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesTransporte.class.php.html">/lib/AccionesTransporte.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesTransporte</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarTransporteConductor" title="details" class="method-name">actualizarTransporteConductor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarTransporteEmpresa" title="details" class="method-name">actualizarTransporteEmpresa</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarTransporteConductor" title="details" class="method-name">borrarTransporteConductor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarTransporteEmpresa" title="details" class="method-name">borrarTransporteEmpresa</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarConductor" title="details" class="method-name">comprobarConductor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarEmpresaTransporte" title="details" class="method-name">comprobarEmpresaTransporte</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarTransporteConductor" title="details" class="method-name">guardarTransporteConductor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarTransporteEmpresa" title="details" class="method-name">guardarTransporteEmpresa</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarTransporteEmpresaNueva" title="details" class="method-name">guardarTransporteEmpresaNueva</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerConductoresXEmpresa" title="details" class="method-name">obtenerConductoresXEmpresa</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5TransporteConductor" title="details" class="method-name">obtenerIdMd5TransporteConductor</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$id_md5_transporte_conductor</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5TransporteEmpresa" title="details" class="method-name">obtenerIdMd5TransporteEmpresa</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$id_md5_transporte_empresa</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdTransporteConductorXIdMd5" title="details" class="method-name">obtenerIdTransporteConductorXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdTransporteEmpresaXIdMd5" title="details" class="method-name">obtenerIdTransporteEmpresaXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjTransporteConductor" title="details" class="method-name">obtenerObjTransporteConductor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjTransporteConductorXIdMd5" title="details" class="method-name">obtenerObjTransporteConductorXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_transporte_conductor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjTransporteEmpresa" title="details" class="method-name">obtenerObjTransporteEmpresa</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjTransporteEmpresaXIdMd5" title="details" class="method-name">obtenerObjTransporteEmpresaXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_transporte_empresa</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteConductores" title="details" class="method-name">obtenerSelectTransporteConductores</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteConductores2" title="details" class="method-name">obtenerSelectTransporteConductores2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteConductores3" title="details" class="method-name">obtenerSelectTransporteConductores3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteConductores4" title="details" class="method-name">obtenerSelectTransporteConductores4</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteEmpresas" title="details" class="method-name">obtenerSelectTransporteEmpresas</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteEmpresas2" title="details" class="method-name">obtenerSelectTransporteEmpresas2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectTransporteEmpresas3" title="details" class="method-name">obtenerSelectTransporteEmpresas3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosTransporteConductores" title="details" class="method-name">obtenerTodosTransporteConductores</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosTransporteEmpresas" title="details" class="method-name">obtenerTodosTransporteEmpresas</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesTransporte</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesTransporte</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarTransporteConductor" id="actualizarTransporteConductor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarTransporteConductor</span> (line <span class="line-number">102</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un conductor de la tabla TransporteConductores</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarTransporteConductor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_conductor</span><span class="var-description">: Id del Transporte Conductor</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id de la empresa a la que pertenece el conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apellidos</span><span class="var-description">: Apellidos del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_trabajo</span><span class="var-description">: Teléfono Trabajo del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_otro</span><span class="var-description">: Teléfono Otro del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$observaciones</span><span class="var-description">: Observaciones del conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarTransporteEmpresa" id="actualizarTransporteEmpresa"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarTransporteEmpresa</span> (line <span class="line-number">514</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un empresa de la tabla TransporteEmpresas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarTransporteEmpresa
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id del Transporte Empresa</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cif_nif</span><span class="var-description">: CIF/NIF de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$poblacion</span><span class="var-description">: Población de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono2</span><span class="var-description">: Otro Teléfono de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$web</span><span class="var-description">: Web de la empresa de transporte</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarTransporteConductor" id="borrarTransporteConductor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarTransporteConductor</span> (line <span class="line-number">135</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un conductor de la tabla TransporteConductores</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarTransporteConductor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_conductor</span><span class="var-description">: Id del transporte conductor a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarTransporteEmpresa" id="borrarTransporteEmpresa"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarTransporteEmpresa</span> (line <span class="line-number">552</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un empresa de la tabla TransporteEmpresas</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarTransporteEmpresa
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id del transporte empresa a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarConductor" id="comprobarConductor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarConductor</span> (line <span class="line-number">802</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un conductor ha intervenido en una entrada o salida</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarConductor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_conductor</span><span class="var-description">: Id del conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarEmpresaTransporte" id="comprobarEmpresaTransporte"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarEmpresaTransporte</span> (line <span class="line-number">833</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si una empresa de transporte tiene conductores asociados</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarEmpresaTransporte
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id de la empresa de transporte</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarTransporteConductor" id="guardarTransporteConductor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarTransporteConductor</span> (line <span class="line-number">36</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Transporte Conductor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_transporte_conductor_save ID del transporte conductor, <ul><li>FALSE si hubo un fallo</li></ul></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarTransporteConductor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id de la empresa a la que pertenece el conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apellidos</span><span class="var-description">: Apellidos del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_trabajo</span><span class="var-description">: Teléfono Trabajo del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_otro</span><span class="var-description">: Teléfono Otro del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del conductor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$observaciones</span><span class="var-description">: Observaciones del conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarTransporteEmpresa" id="guardarTransporteEmpresa"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarTransporteEmpresa</span> (line <span class="line-number">388</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Transporte Empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_transporte_empresa_save ID del transporte empresa, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarTransporteEmpresa
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cif_nif</span><span class="var-description">: CIF/NIF de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$poblacion</span><span class="var-description">: Población de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono2</span><span class="var-description">: Otro Teléfono de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email de la empresa de transporte</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$web</span><span class="var-description">: Web de la empresa de transporte</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarTransporteEmpresaNueva" id="guardarTransporteEmpresaNueva"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarTransporteEmpresaNueva</span> (line <span class="line-number">451</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Transporte Empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_transporte_empresa_save ID del transporte empresa, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarTransporteEmpresaNueva
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la empresa de transporte</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerConductoresXEmpresa" id="obtenerConductoresXEmpresa"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerConductoresXEmpresa</span> (line <span class="line-number">641</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los Conductores a partir del id de transporte empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos TransporteCOnductores de una                      determinada empresa, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerConductoresXEmpresa
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id del Transporte Empresa</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5TransporteConductor" id="obtenerIdMd5TransporteConductor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5TransporteConductor</span> (line <span class="line-number">249</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Transporte Conductor a partir del id del transporte conductor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del transporte conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5TransporteConductor
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$id_md5_transporte_conductor</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_conductor</span><span class="var-description">: Id del transporte conductor</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_md5_transporte_conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5TransporteEmpresa" id="obtenerIdMd5TransporteEmpresa"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5TransporteEmpresa</span> (line <span class="line-number">692</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Transporte Empresa a partir del id del transporte empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del transporte empresa</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5TransporteEmpresa
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$id_md5_transporte_empresa</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id del transporte empresa</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_md5_transporte_empresa</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdTransporteConductorXIdMd5" id="obtenerIdTransporteConductorXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdTransporteConductorXIdMd5</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del transporte conductor a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del transporte conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdTransporteConductorXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_transporte_conductor</span><span class="var-description">: Id Md5 del transporte conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdTransporteEmpresaXIdMd5" id="obtenerIdTransporteEmpresaXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdTransporteEmpresaXIdMd5</span> (line <span class="line-number">589</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del transporte empresa a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del transporte empresa</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdTransporteEmpresaXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_transporte_empresa</span><span class="var-description">: Id Md5 del transporte empresa</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjTransporteConductor" id="obtenerObjTransporteConductor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjTransporteConductor</span> (line <span class="line-number">149</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto TransporteConductor a partir del id del conductor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_transporte_conductor        Objeto TransporteConductor buscado por el id                                                          del transporte conductor, FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjTransporteConductor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_conductor</span><span class="var-description">: Id del transporte conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjTransporteConductorXIdMd5" id="obtenerObjTransporteConductorXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjTransporteConductorXIdMd5</span> (line <span class="line-number">223</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Transporte Conductor a partir del id md5 del transporte conductor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Transporte Conductor buscado por el id md5 del transporte conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjTransporteConductorXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_transporte_conductor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_transporte_conductor</span><span class="var-description">: Id Md5 del transporte conductor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjTransporteEmpresa" id="obtenerObjTransporteEmpresa"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjTransporteEmpresa</span> (line <span class="line-number">566</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto TransporteEmpresa a partir del id del empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_transporte_empresa        Objeto TransporteEmpresa buscado por el id                                                          del transporte empresa, FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjTransporteEmpresa
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_transporte_empresa</span><span class="var-description">: Id del transporte empresa</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjTransporteEmpresaXIdMd5" id="obtenerObjTransporteEmpresaXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjTransporteEmpresaXIdMd5</span> (line <span class="line-number">666</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Transporte Empresa a partir del id md5 del transporte empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Transporte Empresa buscado por el id md5 del transporte empresa</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjTransporteEmpresaXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_transporte_empresa</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_transporte_empresa</span><span class="var-description">: Id Md5 del transporte empresa</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteConductores" id="obtenerSelectTransporteConductores"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteConductores</span> (line <span class="line-number">274</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte conductores de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte conductores con llave el id del conductor y contenido el Nombre del conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteConductores
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteConductores2" id="obtenerSelectTransporteConductores2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteConductores2</span> (line <span class="line-number">299</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte conductores de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte conductores con llave el id del conductor y contenido el Nombre del conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteConductores2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteConductores3" id="obtenerSelectTransporteConductores3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteConductores3</span> (line <span class="line-number">324</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte conductores de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Conductor&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte conductores con llave el id del conductor y contenido el Nombre del conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteConductores3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteConductores4" id="obtenerSelectTransporteConductores4"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteConductores4</span> (line <span class="line-number">349</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte conductores de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte conductores con llave el id del conductor y contenido el Nombre del conductor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteConductores4
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteEmpresas" id="obtenerSelectTransporteEmpresas"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteEmpresas</span> (line <span class="line-number">717</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte empresas de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte empresas con llave el id del empresa y contenido el Nombre del empresa</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteEmpresas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteEmpresas2" id="obtenerSelectTransporteEmpresas2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteEmpresas2</span> (line <span class="line-number">745</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte empresas de la aplicacion  ID = 0 -&gt; &quot;------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte empresas con llave el id del empresa y contenido el Nombre del empresa</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteEmpresas2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectTransporteEmpresas3" id="obtenerSelectTransporteEmpresas3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectTransporteEmpresas3</span> (line <span class="line-number">773</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los transporte empresas de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Empresa de Transporte&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de transporte empresas con llave el id del empresa y contenido el Nombre del empresa</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectTransporteEmpresas3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosTransporteConductores" id="obtenerTodosTransporteConductores"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosTransporteConductores</span> (line <span class="line-number">199</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Transporte Conductor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos TransporteConductores,                                                  FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosTransporteConductores
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosTransporteEmpresas" id="obtenerTodosTransporteEmpresas"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosTransporteEmpresas</span> (line <span class="line-number">616</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Transporte Empresa</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos TransporteEmpresas,                                                  FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosTransporteEmpresas
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:47 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

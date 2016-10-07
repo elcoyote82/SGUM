@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesFamilias</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesFamilias</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con las familias de los articulos</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesFamilias.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesFamilias.class.php.html">/lib/AccionesFamilias.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesFamilias</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarFamilia" title="details" class="method-name">actualizarFamilia</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarFamilia" title="details" class="method-name">borrarFamilia</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarFamilia" title="details" class="method-name">comprobarFamilia</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarFamilia" title="details" class="method-name">guardarFamilia</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerArticulosXIdFamilia" title="details" class="method-name">obtenerArticulosXIdFamilia</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdFamiliaXIdMd5" title="details" class="method-name">obtenerIdFamiliaXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Familia" title="details" class="method-name">obtenerIdMd5Familia</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjFamilia" title="details" class="method-name">obtenerObjFamilia</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjFamiliaXIdMd5" title="details" class="method-name">obtenerObjFamiliaXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_familia</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectFamilias" title="details" class="method-name">obtenerSelectFamilias</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectFamilias2" title="details" class="method-name">obtenerSelectFamilias2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectFamilias3" title="details" class="method-name">obtenerSelectFamilias3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosFamilias" title="details" class="method-name">obtenerTodosFamilias</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesFamilias</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesFamilias</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarFamilia" id="actualizarFamilia"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarFamilia</span> (line <span class="line-number">79</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos una familia de la tabla Familias</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarFamilia
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id del Familia</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarFamilia" id="borrarFamilia"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarFamilia</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar una familia de la tabla Familia</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarFamilia
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id del familia a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarFamilia" id="comprobarFamilia"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarFamilia</span> (line <span class="line-number">337</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si una familia está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarFamilia
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id de la familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarFamilia" id="guardarFamilia"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarFamilia</span> (line <span class="line-number">28</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Familia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_familia_save ID del familia, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarFamilia
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerArticulosXIdFamilia" id="obtenerArticulosXIdFamilia"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerArticulosXIdFamilia</span> (line <span class="line-number">236</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener array de Articulos a partir del Id de la Familia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de articulos</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerArticulosXIdFamilia
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: ID de la familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdFamiliaXIdMd5" id="obtenerIdFamiliaXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdFamiliaXIdMd5</span> (line <span class="line-number">134</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del familia a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del familia</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdFamiliaXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_familia</span><span class="var-description">: Id Md5 del familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Familia" id="obtenerIdMd5Familia"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Familia</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Familia a partir del id del familia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del familia</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Familia
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id del familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjFamilia" id="obtenerObjFamilia"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjFamilia</span> (line <span class="line-number">111</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Familia a partir del id de familia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_familia    Objeto Familia buscado por el id del familia,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjFamilia
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id del familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjFamiliaXIdMd5" id="obtenerObjFamiliaXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjFamiliaXIdMd5</span> (line <span class="line-number">184</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Familia a partir del id md5 del familia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Familia buscado por el id md5 del familia</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjFamiliaXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_familia</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_familia</span><span class="var-description">: Id Md5 del familia</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectFamilias" id="obtenerSelectFamilias"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectFamilias</span> (line <span class="line-number">260</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los familias de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de familias con llave el id del familia y contenido el Nombre del familia</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectFamilias
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectFamilias2" id="obtenerSelectFamilias2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectFamilias2</span> (line <span class="line-number">285</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los familias de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de familias con llave el id del familia y contenido el Nombre del familia</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectFamilias2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectFamilias3" id="obtenerSelectFamilias3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectFamilias3</span> (line <span class="line-number">310</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los familias de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Familia&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de familias con llave el id del familia y contenido el Nombre del familia</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectFamilias3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosFamilias" id="obtenerTodosFamilias"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosFamilias</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Familia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Familia, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosFamilias
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:38 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

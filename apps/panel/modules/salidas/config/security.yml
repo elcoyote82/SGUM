@@ -1,0 +1,24 @@
+# Acción para la Administración de las Salidas
+index:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Procesar una Salida
+procesarSalida:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para la Administración de las Salidas Pendientes
+salidasPendientes:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+  
+# Acción para la Administración de las Salidas Procesadas
+salidasProcesadas:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+  
+# Acción para Ver la Ficha de una Salida
+verSalida:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]

@@ -1,0 +1,24 @@
+# Acción para la Administración de las Entradas
+index:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para la Administración de las Entradas Pendientes
+entradasPendientes:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+  
+# Acción para la Administración de las Entradas Procesadas
+entradasProcesadas:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+
+# Acción para Procesar una Entrada
+procesarEntrada:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]
+  
+# Acción para Ver la Ficha de una Entrada
+verEntrada:
+  is_secure: on
+  credentials: [[Administrador, Almacen]]

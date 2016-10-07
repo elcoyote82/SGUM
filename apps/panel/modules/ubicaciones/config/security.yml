@@ -1,0 +1,24 @@
+# Acción para la Administración de Ubicaciones
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar una Ubicacion
+agregarUbicacion:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+
+# Acción para Borrar una Ubicacion
+borrarUbicacion:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Editar una Ubicacion
+editarUbicacion:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Ver la Ficha de una Ubicacion
+verUbicacion:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

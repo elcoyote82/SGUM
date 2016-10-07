@@ -1,0 +1,13 @@
+fields:
+  nombre:
+    required:
+      msg: El campo nombre no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+    sfPropelUniqueValidator:
+      class:        Ubicaciones
+      column:       nombre
+      unique_error: Ese nombre de ubicación ya existe. Por favor, seleccione otro.  
+fillin:
+  enabled: true

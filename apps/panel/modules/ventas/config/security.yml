@@ -1,0 +1,104 @@
+# Acción index del modulo Ventas
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Administrar las Ventas
+administrarVentas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar un Articulo a la Venta
+agregarArticuloVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Agregar una Venta
+agregarVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Bajar la cantidad de un Articulo en una Venta
+bajarCantidadArticuloVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para borrar un Articulo en una Venta
+borrarArticuloVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para borrar una Venta
+borrarVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para buscar un Articulo en una Venta
+buscarArticuloVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Comprobar una Venta Completa
+comprobarVentaCompleta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Confirmar una Venta Enviada
+confirmarVentaEnviada:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Confirmar una Venta
+confirmarVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Editar una Venta
+editarVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Generar una Venta
+generarVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para Subir la cantidad de un Articulo en una Venta
+subirCantidadArticuloVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar las Ventas Completas
+ventasCompletas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar las Ventas En Proceso
+ventasEnProceso:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar las Ventas Enviadas
+ventasEnviadas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar las Ventas Pendientes
+ventasPendientes:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para mostrar las Ventas Procesadas
+ventasProcesadas:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para ver la Ficha Completa de una Venta
+verVentaCompleta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]
+  
+# Acción para ver la Ficha de una Venta
+verVenta:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

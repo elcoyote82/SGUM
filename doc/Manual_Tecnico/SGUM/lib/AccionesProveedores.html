@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesProveedores</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesProveedores</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con los proveedores</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesProveedores.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesProveedores.class.php.html">/lib/AccionesProveedores.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesProveedores</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarProveedor" title="details" class="method-name">actualizarProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarProveedor" title="details" class="method-name">borrarProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarProveedor" title="details" class="method-name">comprobarProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarProveedor" title="details" class="method-name">guardarProveedor</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Proveedor" title="details" class="method-name">obtenerIdMd5Proveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdProveedorXIdMd5" title="details" class="method-name">obtenerIdProveedorXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreProveedorXIdProveedor" title="details" class="method-name">obtenerNombreProveedorXIdProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjProveedor" title="details" class="method-name">obtenerObjProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjProveedorXIdMd5" title="details" class="method-name">obtenerObjProveedorXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectProveedores" title="details" class="method-name">obtenerSelectProveedores</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectProveedores2" title="details" class="method-name">obtenerSelectProveedores2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectProveedores3" title="details" class="method-name">obtenerSelectProveedores3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosProveedores" title="details" class="method-name">obtenerTodosProveedores</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesProveedores</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesProveedores</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarProveedor" id="actualizarProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarProveedor</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un proveedor de la tabla Proveedores</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del Proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cif_nif</span><span class="var-description">: CIF/NIF del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$poblacion</span><span class="var-description">: Población del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono2</span><span class="var-description">: Otro Teléfono del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$web</span><span class="var-description">: Web del proveedor</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nombre</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarProveedor" id="borrarProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarProveedor</span> (line <span class="line-number">146</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un proveedor de la tabla Proveedor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarProveedor" id="comprobarProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarProveedor</span> (line <span class="line-number">384</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un proveedor está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarProveedor" id="guardarProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarProveedor</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_proveedor_save ID del proveedor, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarProveedor
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cif_nif</span><span class="var-description">: CIF/NIF del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$poblacion</span><span class="var-description">: Población del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono2</span><span class="var-description">: Otro Teléfono del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del proveedor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$web</span><span class="var-description">: Web del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Proveedor" id="obtenerIdMd5Proveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Proveedor</span> (line <span class="line-number">259</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Proveedor a partir del id del proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Proveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdProveedorXIdMd5" id="obtenerIdProveedorXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdProveedorXIdMd5</span> (line <span class="line-number">183</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del proveedor a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdProveedorXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_proveedor</span><span class="var-description">: Id Md5 del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreProveedorXIdProveedor" id="obtenerNombreProveedorXIdProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreProveedorXIdProveedor</span> (line <span class="line-number">360</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el nombre del Proveedor a partir del id de proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del Proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreProveedorXIdProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjProveedor" id="obtenerObjProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjProveedor</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Proveedor a partir del id de proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_proveedor    Objeto Proveedor buscado por el id del proveedor,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjProveedorXIdMd5" id="obtenerObjProveedorXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjProveedorXIdMd5</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Proveedor a partir del id md5 del proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Proveedor buscado por el id md5 del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjProveedorXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_proveedor</span><span class="var-description">: Id Md5 del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectProveedores" id="obtenerSelectProveedores"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectProveedores</span> (line <span class="line-number">284</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los proveedores de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de proveedores con llave el id del proveedor y contenido el Nombre del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectProveedores
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectProveedores2" id="obtenerSelectProveedores2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectProveedores2</span> (line <span class="line-number">309</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los proveedores de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de proveedores con llave el id del proveedor y contenido el Nombre del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectProveedores2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectProveedores3" id="obtenerSelectProveedores3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectProveedores3</span> (line <span class="line-number">334</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los proveedores de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Proveedor&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de proveedores con llave el id del proveedor y contenido el Nombre del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectProveedores3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosProveedores" id="obtenerTodosProveedores"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosProveedores</span> (line <span class="line-number">209</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Proveedor, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosProveedores
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:46 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

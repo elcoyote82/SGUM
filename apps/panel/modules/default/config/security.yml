@@ -1,0 +1,4 @@
+# Acción para la Administración de la Pantalla Principal
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial, Almacen]]

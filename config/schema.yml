@@ -1,0 +1,1210 @@
+---
+propel: 
+  _attributes: 
+    package: lib.model
+  albaranes_entrada: 
+    _attributes: 
+      idMethod: native
+    id_albaran_entrada: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_entrada: 
+      type: INTEGER
+      required: true
+      foreignTable: entradas
+      foreignReference: id_entrada
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_pedido: 
+      type: INTEGER
+      required: true
+      foreignTable: pedidos
+      foreignReference: id_pedido
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_albaran_entrada: 
+      type: VARCHAR
+      size: 255
+      required: true
+    ruta_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_albaranes_entrada_1: 
+        - id_pedido
+      FK_albaranes_entrada_2: 
+        - id_entrada
+  albaranes_pedido: 
+    _attributes: 
+      idMethod: native
+    id_albaran_pedido: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_pedido: 
+      type: INTEGER
+      required: true
+      foreignTable: pedidos
+      foreignReference: id_pedido
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_albaran_pedido: 
+      type: VARCHAR
+      size: 255
+      required: true
+    ruta_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_albaranes_entrada_1: 
+        - id_pedido
+  albaranes_salida: 
+    _attributes: 
+      idMethod: native
+    id_albaran_salida: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_salida: 
+      type: INTEGER
+      required: true
+      foreignTable: salidas
+      foreignReference: id_salida
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_venta: 
+      type: INTEGER
+      required: true
+      foreignTable: ventas
+      foreignReference: id_venta
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_albaran_salida: 
+      type: VARCHAR
+      size: 255
+      required: true
+    ruta_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_albaranes_salida_1: 
+        - id_venta
+      FK_albaranes_salida_2: 
+        - id_salida
+  albaranes_venta: 
+    _attributes: 
+      idMethod: native
+    id_albaran_venta: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_venta: 
+      type: INTEGER
+      required: true
+      foreignTable: ventas
+      foreignReference: id_venta
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_albaran_venta: 
+      type: VARCHAR
+      size: 255
+      required: true
+    ruta_albaran: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_albaranes_salida_1: 
+        - id_venta
+  articulos: 
+    _attributes: 
+      idMethod: native
+    id_articulo: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_articulo: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_familia: 
+      type: INTEGER
+      required: true
+      foreignTable: familias
+      foreignReference: id_familia
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    nombre: 
+      type: VARCHAR
+      size: 255
+      required: true
+    datos_producto: 
+      type: VARCHAR
+      size: 255
+      required: true
+    descripcion: 
+      type: LONGVARCHAR
+      required: true
+    stock: 
+      type: INTEGER
+      required: true
+    stock_minimo: 
+      type: INTEGER
+      required: true
+    aviso_minimo: 
+      type: CHAR
+      required: true
+    stock_bajo: 
+      type: CHAR
+      required: true
+    imagen: 
+      type: VARCHAR
+      size: 255
+      required: true
+    borrado: 
+      type: CHAR
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_1: 
+        - id_familia
+  articulos_x_entrada: 
+    _attributes: 
+      idMethod: native
+    id_articulo_x_entrada: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+    id_entrada: 
+      type: INTEGER
+      required: true
+    id_ubicacion: 
+      type: INTEGER
+      required: true
+    lote: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_x_entrada_articulos: 
+        - id_articulo
+      FK_articulos_x_entrada_entradas: 
+        - id_entrada
+  articulos_x_lote: 
+    _attributes: 
+      idMethod: native
+    id_articulo_x_lote: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+      foreignTable: articulos
+      foreignReference: id_articulo
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_ubicacion: 
+      type: INTEGER
+      required: true
+      foreignTable: ubicaciones
+      foreignReference: id_ubicacion
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    lote: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_x_lote_1: 
+        - id_articulo
+      articulos_x_lote_2: 
+        - id_ubicacion
+  articulos_x_pedido: 
+    _attributes: 
+      idMethod: native
+    id_articulo_x_pedido: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+      foreignTable: articulos
+      foreignReference: id_articulo
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_pedido: 
+      type: INTEGER
+      required: true
+      foreignTable: pedidos
+      foreignReference: id_pedido
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    cantidad: 
+      type: INTEGER
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_x_pedido_1: 
+        - id_articulo
+      FK_articulos_x_pedido_2: 
+        - id_pedido
+  articulos_x_proveedor: 
+    _attributes: 
+      idMethod: native
+    id_articulo_x_proveedor: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+      foreignTable: articulos
+      foreignReference: id_articulo
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_proveedor: 
+      type: INTEGER
+      required: true
+      foreignTable: proveedores
+      foreignReference: id_proveedor
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_x_proveedor_1: 
+        - id_articulo
+      FK_articulos_x_proveedor_2: 
+        - id_proveedor
+  articulos_x_salida: 
+    _attributes: 
+      idMethod: native
+    id_articulo_x_salida: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+      foreignTable: articulos
+      foreignReference: id_articulo
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_salida: 
+      type: INTEGER
+      required: true
+      foreignTable: salidas
+      foreignReference: id_salida
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_ubicacion: 
+      type: INTEGER
+      required: true
+    lote: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_x_entrada_articulos: 
+        - id_articulo
+      FK_articulos_x_salida_salidas: 
+        - id_salida
+  articulos_x_venta: 
+    _attributes: 
+      idMethod: native
+    id_articulo_x_venta: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+      foreignTable: articulos
+      foreignReference: id_articulo
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_venta: 
+      type: INTEGER
+      required: true
+      foreignTable: ventas
+      foreignReference: id_venta
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    cantidad: 
+      type: INTEGER
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_articulos_x_venta_1: 
+        - id_articulo
+      FK_articulos_x_venta_2: 
+        - id_venta
+  clientes: 
+    _attributes: 
+      idMethod: native
+    id_cliente: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_cliente: 
+      type: VARCHAR
+      size: 255
+      required: true
+    nombre: 
+      type: VARCHAR
+      size: 255
+      required: true
+    cif_nif: 
+      type: VARCHAR
+      size: 15
+      required: true
+    direccion: 
+      type: VARCHAR
+      size: 45
+      required: true
+    poblacion: 
+      type: VARCHAR
+      size: 45
+      required: true
+    provincia: 
+      type: VARCHAR
+      size: 45
+      required: true
+    cp: 
+      type: VARCHAR
+      size: 5
+      required: true
+    pais: 
+      type: VARCHAR
+      size: 45
+      required: true
+    telefono: 
+      type: VARCHAR
+      size: 15
+      required: true
+    telefono2: 
+      type: VARCHAR
+      size: 15
+      required: true
+    movil: 
+      type: VARCHAR
+      size: 15
+      required: true
+    fax: 
+      type: VARCHAR
+      size: 15
+      required: true
+    email: 
+      type: VARCHAR
+      size: 255
+      required: true
+    web: 
+      type: VARCHAR
+      size: 255
+      required: true
+    borrado: 
+      type: CHAR
+      required: true
+      default: 0
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  configuracion_tarea_programada: 
+    _attributes: 
+      idMethod: native
+    id_configuracion: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    tiempo_repeticion: 
+      type: INTEGER
+    fecha_ultima_actualizacion: 
+      type: TIMESTAMP
+  contactos: 
+    _attributes: 
+      idMethod: native
+    id_contacto: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_contacto: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_contactado: 
+      type: INTEGER
+      required: true
+    id_jefe: 
+      type: INTEGER
+    nombre: 
+      type: VARCHAR
+      size: 45
+      required: true
+    apellidos: 
+      type: VARCHAR
+      size: 255
+      required: true
+    puesto: 
+      type: VARCHAR
+      size: 255
+    direccion: 
+      type: VARCHAR
+      size: 255
+    cp: 
+      type: VARCHAR
+      size: 5
+    localidad: 
+      type: VARCHAR
+      size: 255
+    provincia: 
+      type: VARCHAR
+      size: 255
+    pais: 
+      type: VARCHAR
+      size: 255
+    telefono: 
+      type: VARCHAR
+      size: 255
+    ext_telefono: 
+      type: VARCHAR
+      size: 15
+    telefono_trabajo: 
+      type: VARCHAR
+      size: 255
+    telefono_otro: 
+      type: VARCHAR
+      size: 255
+    movil: 
+      type: VARCHAR
+      size: 255
+    fax: 
+      type: VARCHAR
+      size: 255
+    email: 
+      type: VARCHAR
+      size: 255
+    email_dos: 
+      type: VARCHAR
+      size: 255
+    email_tres: 
+      type: VARCHAR
+      size: 255
+    observaciones: 
+      type: LONGVARCHAR
+    opcion: 
+      type: CHAR
+      required: true
+      default: 0
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_clientes: 
+        - id_contactado
+  entradas: 
+    _attributes: 
+      idMethod: native
+    id_entrada: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_entrada: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_pedido: 
+      type: INTEGER
+      required: true
+      foreignTable: pedidos
+      foreignReference: id_pedido
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_transporte_conductor: 
+      type: INTEGER
+      required: true
+      foreignTable: transporte_conductores
+      foreignReference: id_transporte_conductor
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_estado_entrada: 
+      type: INTEGER
+      required: true
+      foreignTable: estado_entradas
+      foreignReference: id_estado_entrada
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_entrada: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_entradas_1: 
+        - id_pedido
+      FK_entradas_3: 
+        - id_estado_entrada
+      FK_entradas_transporte_conductores: 
+        - id_transporte_conductor
+  entradas_x_articulo: 
+    _attributes: 
+      idMethod: native
+    id_entrada_x_articulo: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_entrada: 
+      type: INTEGER
+      required: true
+      foreignTable: entradas
+      foreignReference: id_entrada
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_articulo: 
+      type: INTEGER
+      required: true
+      foreignTable: articulos
+      foreignReference: id_articulo
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    cantidad: 
+      type: INTEGER
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_entradas_x_articulo_1: 
+        - id_entrada
+      FK_entradas_x_articulo_2: 
+        - id_articulo
+  estado_entradas: 
+    _attributes: 
+      idMethod: native
+    id_estado_entrada: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    estado_entrada: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  estado_pedidos: 
+    _attributes: 
+      idMethod: native
+    id_estado_pedido: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    estado_pedido: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  estado_salidas: 
+    _attributes: 
+      idMethod: native
+    id_estado_salida: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    estado_salida: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  estado_ubicaciones: 
+    _attributes: 
+      idMethod: native
+    id_estado_ubicacion: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    estado_ubicacion: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  estado_ventas: 
+    _attributes: 
+      idMethod: native
+    id_estado_venta: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    estado_venta: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  familias: 
+    _attributes: 
+      idMethod: native
+    id_familia: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_familia: 
+      type: VARCHAR
+      size: 255
+      required: true
+    nombre: 
+      type: VARCHAR
+      size: 255
+      required: true
+    borrado: 
+      type: CHAR
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  pedidos: 
+    _attributes: 
+      idMethod: native
+    id_pedido: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_pedido: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_usuario: 
+      type: INTEGER
+      required: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_proveedor: 
+      type: INTEGER
+      required: true
+      foreignTable: proveedores
+      foreignReference: id_proveedor
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_estado_pedido: 
+      type: INTEGER
+      required: true
+      foreignTable: estado_pedidos
+      foreignReference: id_estado_pedido
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_pedido: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_pedidos_1: 
+        - id_usuario
+      FK_pedidos_2: 
+        - id_proveedor
+      FK_pedidos_3: 
+        - id_estado_pedido
+  proveedores: 
+    _attributes: 
+      idMethod: native
+    id_proveedor: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_proveedor: 
+      type: VARCHAR
+      size: 255
+      required: true
+    nombre: 
+      type: VARCHAR
+      size: 255
+      required: true
+    cif_nif: 
+      type: VARCHAR
+      size: 15
+      required: true
+    direccion: 
+      type: VARCHAR
+      size: 255
+      required: true
+    poblacion: 
+      type: VARCHAR
+      size: 45
+      required: true
+    provincia: 
+      type: VARCHAR
+      size: 45
+      required: true
+    cp: 
+      type: VARCHAR
+      size: 5
+      required: true
+    pais: 
+      type: VARCHAR
+      size: 45
+      required: true
+    telefono: 
+      type: VARCHAR
+      size: 15
+      required: true
+    telefono2: 
+      type: VARCHAR
+      size: 15
+      required: true
+    movil: 
+      type: VARCHAR
+      size: 15
+      required: true
+    fax: 
+      type: VARCHAR
+      size: 15
+      required: true
+    email: 
+      type: VARCHAR
+      size: 255
+      required: true
+    web: 
+      type: VARCHAR
+      size: 255
+      required: true
+    borrado: 
+      type: CHAR
+      required: true
+      default: 0
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  salidas: 
+    _attributes: 
+      idMethod: native
+    id_salida: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_salida: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_venta: 
+      type: INTEGER
+      required: true
+      foreignTable: ventas
+      foreignReference: id_venta
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_transporte_conductor: 
+      type: INTEGER
+      required: true
+      foreignTable: transporte_conductores
+      foreignReference: id_transporte_conductor
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_estado_salida: 
+      type: INTEGER
+      required: true
+      foreignTable: estado_salidas
+      foreignReference: id_estado_salida
+      onDelete: RESTRICT
+      onUpdate: RESTRICT
+    num_salida: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_salidas_1: 
+        - id_venta
+      FK_salidas_3: 
+        - id_estado_salida
+      id_transporte_conductor: 
+        - id_transporte_conductor
+  salidas_x_articulo: 
+    _attributes: 
+      idMethod: native
+    id_salida_x_articulo: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_salida: 
+      type: INTEGER
+      required: true
+    id_articulo: 
+      type: INTEGER
+      required: true
+    cantidad: 
+      type: INTEGER
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  sf_guard_user_profile: 
+    _attributes: 
+      idMethod: native
+    id_profile: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5: 
+      type: VARCHAR
+      size: 255
+      required: true
+      default: null
+    user_id: 
+      type: INTEGER
+      required: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    nombre: 
+      type: VARCHAR
+      size: 45
+      required: true
+      default: null
+    apellidos: 
+      type: VARCHAR
+      size: 255
+      required: true
+      default: null
+    telefono: 
+      type: VARCHAR
+      size: 15
+      required: true
+      default: null
+    email: 
+      type: VARCHAR
+      size: 255
+      required: true
+      default: null
+    imagen: 
+      type: VARCHAR
+      size: 255
+      required: true
+      default: null
+    idioma: 
+      type: VARCHAR
+      size: 45
+      required: true
+      default: null
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_sf_guard_user_profile_1: 
+        - user_id
+  transporte_conductores: 
+    _attributes: 
+      idMethod: native
+    id_transporte_conductor: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_transporte_conductor: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_transporte_empresa: 
+      type: INTEGER
+      required: true
+      foreignTable: transporte_empresas
+      foreignReference: id_transporte_empresa
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    nombre: 
+      type: VARCHAR
+      size: 45
+      required: true
+    apellidos: 
+      type: VARCHAR
+      size: 255
+      required: true
+    telefono: 
+      type: VARCHAR
+      size: 255
+    telefono_trabajo: 
+      type: VARCHAR
+      size: 255
+    telefono_otro: 
+      type: VARCHAR
+      size: 255
+    movil: 
+      type: VARCHAR
+      size: 255
+    observaciones: 
+      type: LONGVARCHAR
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_transporte_conductores_transporte_empresas: 
+        - id_transporte_empresa
+  transporte_empresas: 
+    _attributes: 
+      idMethod: native
+    id_transporte_empresa: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_transporte_empresa: 
+      type: VARCHAR
+      size: 255
+      required: true
+    nombre: 
+      type: VARCHAR
+      size: 255
+      required: true
+    cif_nif: 
+      type: VARCHAR
+      size: 15
+      required: true
+    direccion: 
+      type: VARCHAR
+      size: 45
+      required: true
+    poblacion: 
+      type: VARCHAR
+      size: 45
+      required: true
+    provincia: 
+      type: VARCHAR
+      size: 45
+      required: true
+    cp: 
+      type: VARCHAR
+      size: 5
+      required: true
+    pais: 
+      type: VARCHAR
+      size: 45
+      required: true
+    telefono: 
+      type: VARCHAR
+      size: 15
+      required: true
+    telefono2: 
+      type: VARCHAR
+      size: 15
+      required: true
+    movil: 
+      type: VARCHAR
+      size: 15
+      required: true
+    fax: 
+      type: VARCHAR
+      size: 15
+      required: true
+    email: 
+      type: VARCHAR
+      size: 255
+      required: true
+    web: 
+      type: VARCHAR
+      size: 255
+      required: true
+    borrado: 
+      type: CHAR
+      required: true
+      default: 0
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+  ubicaciones: 
+    _attributes: 
+      idMethod: native
+    id_ubicacion: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_ubicacion: 
+      type: VARCHAR
+      size: 255
+      required: true
+    nombre: 
+      type: VARCHAR
+      size: 255
+    id_estado_ubicacion: 
+      type: INTEGER
+      required: true
+      foreignTable: estado_ubicaciones
+      foreignReference: id_estado_ubicacion
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_ubicaciones_estado_ubicaciones: 
+        - id_estado_ubicacion
+  ventas: 
+    _attributes: 
+      idMethod: native
+    id_venta: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    id_md5_venta: 
+      type: VARCHAR
+      size: 255
+      required: true
+    id_usuario: 
+      type: INTEGER
+      required: true
+      foreignTable: sf_guard_user
+      foreignReference: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_cliente: 
+      type: INTEGER
+      required: true
+      foreignTable: clientes
+      foreignReference: id_cliente
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    id_estado_venta: 
+      type: INTEGER
+      required: true
+      foreignTable: estado_ventas
+      foreignReference: id_estado_venta
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    num_venta: 
+      type: VARCHAR
+      size: 255
+      required: true
+    created_at: ~
+    updated_at: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      FK_ventas_1: 
+        - id_usuario
+      FK_ventas_2: 
+        - id_cliente
+      FK_ventas_3: 
+        - id_estado_venta

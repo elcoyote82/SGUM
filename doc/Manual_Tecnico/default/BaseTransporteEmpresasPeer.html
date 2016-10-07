@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class BaseTransporteEmpresasPeer</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/AbstractClass_logo.png"
+														alt="Abstract Class"
+														title="Abstract Class"
+														style="vertical-align: middle"> BaseTransporteEmpresasPeer</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|													<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---model---om---BaseTransporteEmpresasPeer.php.html">/lib/model/om/BaseTransporteEmpresasPeer.php</a> (line <span class="field">4</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../lib-model/TransporteEmpresasPeer.html">TransporteEmpresasPeer</a>
+					</td>
+					<td>
+											Subclass for performing query and update operations on the 'transporte_empresas' table.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#BORRADO" title="details" class="const-name">BORRADO</a> = 					<span class="var-type"> 'transporte_empresas.BORRADO'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#CIF_NIF" title="details" class="const-name">CIF_NIF</a> = 					<span class="var-type"> 'transporte_empresas.CIF_NIF'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#CLASS_DEFAULT" title="details" class="const-name">CLASS_DEFAULT</a> = 					<span class="var-type"> 'lib.model.TransporteEmpresas'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#COUNT" title="details" class="const-name">COUNT</a> = 					<span class="var-type"> 'COUNT(transporte_empresas.ID_TRANSPORTE_EMPRESA)'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#COUNT_DISTINCT" title="details" class="const-name">COUNT_DISTINCT</a> = 					<span class="var-type"> 'COUNT(DISTINCT transporte_empresas.ID_TRANSPORTE_EMPRESA)'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#CP" title="details" class="const-name">CP</a> = 					<span class="var-type"> 'transporte_empresas.CP'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#CREATED_AT" title="details" class="const-name">CREATED_AT</a> = 					<span class="var-type"> 'transporte_empresas.CREATED_AT'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#DATABASE_NAME" title="details" class="const-name">DATABASE_NAME</a> = 					<span class="var-type"> 'propel'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#DIRECCION" title="details" class="const-name">DIRECCION</a> = 					<span class="var-type"> 'transporte_empresas.DIRECCION'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#EMAIL" title="details" class="const-name">EMAIL</a> = 					<span class="var-type"> 'transporte_empresas.EMAIL'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#FAX" title="details" class="const-name">FAX</a> = 					<span class="var-type"> 'transporte_empresas.FAX'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ID_MD5_TRANSPORTE_EMPRESA" title="details" class="const-name">ID_MD5_TRANSPORTE_EMPRESA</a> = 					<span class="var-type"> 'transporte_empresas.ID_MD5_TRANSPORTE_EMPRESA'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ID_TRANSPORTE_EMPRESA" title="details" class="const-name">ID_TRANSPORTE_EMPRESA</a> = 					<span class="var-type"> 'transporte_empresas.ID_TRANSPORTE_EMPRESA'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#MOVIL" title="details" class="const-name">MOVIL</a> = 					<span class="var-type"> 'transporte_empresas.MOVIL'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#NOMBRE" title="details" class="const-name">NOMBRE</a> = 					<span class="var-type"> 'transporte_empresas.NOMBRE'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#NUM_COLUMNS" title="details" class="const-name">NUM_COLUMNS</a> = 					<span class="var-type"> 18</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#NUM_LAZY_LOAD_COLUMNS" title="details" class="const-name">NUM_LAZY_LOAD_COLUMNS</a> = 					<span class="var-type"> 0</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#PAIS" title="details" class="const-name">PAIS</a> = 					<span class="var-type"> 'transporte_empresas.PAIS'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#POBLACION" title="details" class="const-name">POBLACION</a> = 					<span class="var-type"> 'transporte_empresas.POBLACION'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#PROVINCIA" title="details" class="const-name">PROVINCIA</a> = 					<span class="var-type"> 'transporte_empresas.PROVINCIA'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TABLE_NAME" title="details" class="const-name">TABLE_NAME</a> = 					<span class="var-type"> 'transporte_empresas'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TELEFONO" title="details" class="const-name">TELEFONO</a> = 					<span class="var-type"> 'transporte_empresas.TELEFONO'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#TELEFONO2" title="details" class="const-name">TELEFONO2</a> = 					<span class="var-type"> 'transporte_empresas.TELEFONO2'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#UPDATED_AT" title="details" class="const-name">UPDATED_AT</a> = 					<span class="var-type"> 'transporte_empresas.UPDATED_AT'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#WEB" title="details" class="const-name">WEB</a> = 					<span class="var-type"> 'transporte_empresas.WEB'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+									<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#addSelectColumns" title="details" class="method-name">addSelectColumns</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#alias" title="details" class="method-name">alias</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$alias</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$column</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doCount" title="details" class="method-name">doCount</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$distinct</span> = <span class="var-default">false</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doDelete" title="details" class="method-name">doDelete</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doDeleteAll" title="details" class="method-name">doDeleteAll</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doInsert" title="details" class="method-name">doInsert</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doOnDeleteCascade" title="details" class="method-name">doOnDeleteCascade</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$con</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doSelect" title="details" class="method-name">doSelect</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doSelectOne" title="details" class="method-name">doSelectOne</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doSelectRS" title="details" class="method-name">doSelectRS</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doUpdate" title="details" class="method-name">doUpdate</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#doValidate" title="details" class="method-name">doValidate</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$obj</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$cols</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#getFieldNames" title="details" class="method-name">getFieldNames</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">BasePeer::TYPE_PHPNAME</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#getMapBuilder" title="details" class="method-name">getMapBuilder</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#getOMClass" title="details" class="method-name">getOMClass</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#getPhpNameMap" title="details" class="method-name">getPhpNameMap</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#getTableMap" title="details" class="method-name">getTableMap</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#populateObjects" title="details" class="method-name">populateObjects</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$rs</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#retrieveByPK" title="details" class="method-name">retrieveByPK</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$pk</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#retrieveByPKs" title="details" class="method-name">retrieveByPKs</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$pks</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#translateFieldName" title="details" class="method-name">translateFieldName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$fromType</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$toType</span>)
+									</div>
+																																																																																																																																																																																							</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodaddSelectColumns" id="addSelectColumns"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static addSelectColumns</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addSelectColumns
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Criteria</span>
+				<span class="var-name">$criteria</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodalias" id="alias"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static alias</span> (line <span class="line-number">138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			alias
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$alias</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$column</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$alias</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$column</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoCount" id="doCount"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doCount</span> (line <span class="line-number">189</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doCount
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$distinct</span> = <span class="var-default">false</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Criteria</span>
+				<span class="var-name">$criteria</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$distinct</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoDelete" id="doDelete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doDelete</span> (line <span class="line-number">339</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doDelete
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoDeleteAll" id="doDeleteAll"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doDeleteAll</span> (line <span class="line-number">321</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doDeleteAll
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoInsert" id="doInsert"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doInsert</span> (line <span class="line-number">273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doInsert
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoOnDeleteCascade" id="doOnDeleteCascade"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doOnDeleteCascade</span> (line <span class="line-number">370</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doOnDeleteCascade
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$con</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Criteria</span>
+				<span class="var-name">$criteria</span>			</li>
+					<li>
+				<span class="var-type">Connection</span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoSelect" id="doSelect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doSelect</span> (line <span class="line-number">224</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doSelect
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Criteria</span>
+				<span class="var-name">$criteria</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoSelectOne" id="doSelectOne"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doSelectOne</span> (line <span class="line-number">213</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doSelectOne
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Criteria</span>
+				<span class="var-name">$criteria</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoSelectRS" id="doSelectRS"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doSelectRS</span> (line <span class="line-number">229</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doSelectRS
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$criteria</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Criteria</span>
+				<span class="var-name">$criteria</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoUpdate" id="doUpdate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doUpdate</span> (line <span class="line-number">300</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doUpdate
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$values</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddoValidate" id="doValidate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static doValidate</span> (line <span class="line-number">389</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doValidate
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$obj</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$cols</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../lib-model/TransporteEmpresas.html">TransporteEmpresas</a></span>
+				<span class="var-name">$obj</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$cols</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFieldNames" id="getFieldNames"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static getFieldNames</span> (line <span class="line-number">129</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getFieldNames
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">BasePeer::TYPE_PHPNAME</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMapBuilder" id="getMapBuilder"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static getMapBuilder</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMapBuilder
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOMClass" id="getOMClass"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static getOMClass</span> (line <span class="line-number">267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getOMClass
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPhpNameMap" id="getPhpNameMap"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static getPhpNameMap</span> (line <span class="line-number">103</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getPhpNameMap
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTableMap" id="getTableMap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static getTableMap</span> (line <span class="line-number">261</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getTableMap
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpopulateObjects" id="populateObjects"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static populateObjects</span> (line <span class="line-number">245</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			populateObjects
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$rs</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">ResultSet</span>
+				<span class="var-name">$rs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodretrieveByPK" id="retrieveByPK"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static retrieveByPK</span> (line <span class="line-number">424</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			retrieveByPK
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$pk</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pk</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodretrieveByPKs" id="retrieveByPKs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static retrieveByPKs</span> (line <span class="line-number">441</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			retrieveByPKs
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$pks</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$con</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pks</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$con</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtranslateFieldName" id="translateFieldName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static translateFieldName</span> (line <span class="line-number">117</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			translateFieldName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$fromType</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$toType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$fromType</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$toType</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constBORRADO" id="BORRADO"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">BORRADO</span>
+			 = <span class="const-default"> 'transporte_empresas.BORRADO'</span>
+			(line <span class="line-number">68</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCIF_NIF" id="CIF_NIF"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CIF_NIF</span>
+			 = <span class="const-default"> 'transporte_empresas.CIF_NIF'</span>
+			(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCLASS_DEFAULT" id="CLASS_DEFAULT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CLASS_DEFAULT</span>
+			 = <span class="const-default"> 'lib.model.TransporteEmpresas'</span>
+			(line <span class="line-number">13</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCOUNT" id="COUNT"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">COUNT</span>
+			 = <span class="const-default"> 'COUNT(transporte_empresas.ID_TRANSPORTE_EMPRESA)'</span>
+			(line <span class="line-number">185</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCOUNT_DISTINCT" id="COUNT_DISTINCT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">COUNT_DISTINCT</span>
+			 = <span class="const-default"> 'COUNT(DISTINCT transporte_empresas.ID_TRANSPORTE_EMPRESA)'</span>
+			(line <span class="line-number">186</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCP" id="CP"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CP</span>
+			 = <span class="const-default"> 'transporte_empresas.CP'</span>
+			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCREATED_AT" id="CREATED_AT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CREATED_AT</span>
+			 = <span class="const-default"> 'transporte_empresas.CREATED_AT'</span>
+			(line <span class="line-number">71</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constDATABASE_NAME" id="DATABASE_NAME"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DATABASE_NAME</span>
+			 = <span class="const-default"> 'propel'</span>
+			(line <span class="line-number">7</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constDIRECCION" id="DIRECCION"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DIRECCION</span>
+			 = <span class="const-default"> 'transporte_empresas.DIRECCION'</span>
+			(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constEMAIL" id="EMAIL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">EMAIL</span>
+			 = <span class="const-default"> 'transporte_empresas.EMAIL'</span>
+			(line <span class="line-number">62</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constFAX" id="FAX"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">FAX</span>
+			 = <span class="const-default"> 'transporte_empresas.FAX'</span>
+			(line <span class="line-number">59</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constID_MD5_TRANSPORTE_EMPRESA" id="ID_MD5_TRANSPORTE_EMPRESA"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ID_MD5_TRANSPORTE_EMPRESA</span>
+			 = <span class="const-default"> 'transporte_empresas.ID_MD5_TRANSPORTE_EMPRESA'</span>
+			(line <span class="line-number">26</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constID_TRANSPORTE_EMPRESA" id="ID_TRANSPORTE_EMPRESA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ID_TRANSPORTE_EMPRESA</span>
+			 = <span class="const-default"> 'transporte_empresas.ID_TRANSPORTE_EMPRESA'</span>
+			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constMOVIL" id="MOVIL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">MOVIL</span>
+			 = <span class="const-default"> 'transporte_empresas.MOVIL'</span>
+			(line <span class="line-number">56</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constNOMBRE" id="NOMBRE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">NOMBRE</span>
+			 = <span class="const-default"> 'transporte_empresas.NOMBRE'</span>
+			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constNUM_COLUMNS" id="NUM_COLUMNS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">NUM_COLUMNS</span>
+			 = <span class="const-default"> 18</span>
+			(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constNUM_LAZY_LOAD_COLUMNS" id="NUM_LAZY_LOAD_COLUMNS"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">NUM_LAZY_LOAD_COLUMNS</span>
+			 = <span class="const-default"> 0</span>
+			(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constPAIS" id="PAIS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">PAIS</span>
+			 = <span class="const-default"> 'transporte_empresas.PAIS'</span>
+			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constPOBLACION" id="POBLACION"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">POBLACION</span>
+			 = <span class="const-default"> 'transporte_empresas.POBLACION'</span>
+			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constPROVINCIA" id="PROVINCIA"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">PROVINCIA</span>
+			 = <span class="const-default"> 'transporte_empresas.PROVINCIA'</span>
+			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTABLE_NAME" id="TABLE_NAME"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TABLE_NAME</span>
+			 = <span class="const-default"> 'transporte_empresas'</span>
+			(line <span class="line-number">10</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTELEFONO" id="TELEFONO"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TELEFONO</span>
+			 = <span class="const-default"> 'transporte_empresas.TELEFONO'</span>
+			(line <span class="line-number">50</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTELEFONO2" id="TELEFONO2"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TELEFONO2</span>
+			 = <span class="const-default"> 'transporte_empresas.TELEFONO2'</span>
+			(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constUPDATED_AT" id="UPDATED_AT"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">UPDATED_AT</span>
+			 = <span class="const-default"> 'transporte_empresas.UPDATED_AT'</span>
+			(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constWEB" id="WEB"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">WEB</span>
+			 = <span class="const-default"> 'transporte_empresas.WEB'</span>
+			(line <span class="line-number">65</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:57:33 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

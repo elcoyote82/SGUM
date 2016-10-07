@@ -1,0 +1,164 @@
+# Acción para la Administración de Usuarios
+index:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para la Administración de Estados
+administrarEstados:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para la Administración de Grupos
+administrarGrupos:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para la Administración de la Numeracion
+administrarNumeracion:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para la Administración de Permisos
+administrarPermisos:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para la Administración de la Tarea Programada
+administrarTareaProgramada:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un EstadoEntrada
+borrarEstadoEntrada:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un EstadoPedido
+borrarEstadoPedido:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un EstadoSalida
+borrarEstadoSalida:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un EstadoVenta
+borrarEstadoVenta:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un Grupo
+borrarGrupo:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un Permiso
+borrarPermiso:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para borrar un Usuario
+borrarUsuario:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para buscar un Usuario por Login
+buscarLogin:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para cambiar de Grupo a un Usuario
+cambiarGrupo:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para cambiar de Password a un Usuario
+cambiarPassword:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un EstadoEntrada
+crearEstadoEntrada:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un EstadoPedido
+crearEstadoPedido:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un EstadoSalida
+crearEstadoSalida:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un EstadoVenta
+crearEstadoVenta:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un Grupo
+crearGrupo:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un Permiso
+crearPermiso:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para crear un usuario
+crearUsuario:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un EstadoEntrada
+editarEstadoEntrada:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un EstadoPedido
+editarEstadoPedido:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un EstadoSalida
+editarEstadoSalida:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un EstadoVenta
+editarEstadoVenta:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un Grupo
+editarGrupo:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un Permiso
+editarPermiso:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para editar un usuario
+editarUsuario:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para ver los Grupos que tienen un Permiso
+verGruposPermiso:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para ver los Usuarios de un Grupo
+verUsuariosGrupo:
+  is_secure: on
+  credentials: [Administrador]
+  
+# Acción para ver los Usuarios que tienen un Permiso
+verUsuariosPermiso:
+  is_secure: on
+  credentials: [Administrador]

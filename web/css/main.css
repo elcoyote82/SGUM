@@ -1,0 +1,808 @@
+/**
+ * @package SGUM
+ * @subpackage css
+ * @name main.css
+ * @author     Adrián Corujo Carballedo
+ * @version 1.0
+ */
+ 
+/* BODY */
+body
+{    
+  font-size:   11px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  margin-top:  20px;
+  padding:     5px;
+  text-align:  center;
+}
+
+/* CAJA DE CONTENIDO TOTAL*/
+#caja_total
+{     
+  width:              1105px; 
+  margin:             auto;
+}
+/* CONTENEDOR PRINCIPAL */
+#contenedor
+{
+  width:      100%;
+  background: #FFFFFF;
+}
+
+/* HEADER */
+#header
+{     
+  width:               100%;
+  height:              150px;
+  margin:              auto;    
+}
+
+#header_interno
+{
+  width:               90%;
+  height:              50px;
+  margin:              auto;   
+  margin-top:          20px;
+  border-bottom:       1px solid #483D8B;
+}
+
+.titulo_header
+{
+  /*width:        50%;*/
+  margin-left:  10px;
+  font-size:    25px;
+  text-align:   left;
+  color:        #483D8B;
+}
+
+#cerrarSesion
+{  
+  float:       right;
+  font-size:   14px;
+  color:       #483D8B;
+  margin-top:  -25px;
+}
+
+/* LOGIN */
+#page_login
+{
+  width:            400px;
+  height:           auto;
+  padding-top:      20px;
+  padding-bottom:   20px; 
+  margin:           auto;
+  border-top:       1px solid #483D8B;
+  border-bottom:    1px solid #483D8B; 
+}
+
+#contenedor_login 
+{
+  text-align:       center;       
+}
+
+#caja_login 
+{ 
+  width:      250px;
+  text-align: right;  
+  margin:     auto; 
+}
+
+#opc_login_msg
+{
+  width:         350px;
+  margin-top:    5px;
+  margin-left:   10px;
+  margin-bottom: 5px;
+  font-weight:   bold;
+  color:         #483D8B; 
+}
+
+#opc_login_acceso
+{
+  width:         350px;
+  margin-top:    5px;
+  margin-left:   20px;
+  margin-bottom: 5px;
+  font-size:     10px;
+  color:         #483D8B; 
+}
+
+.opc_login
+{
+  margin-top:    5px;
+  margin-bottom: 5px;
+  color:         #483D8B;
+}
+
+.opc_login_boton
+{
+  margin-bottom: 5px;
+}
+
+/* BOTONES */
+.buttonEsqueleto
+{
+  ont-size:            10px;
+  font-family:         Verdana,Helvetica;
+  font-weight:         bold;
+  font-size:           12px;
+  color:               white;
+  background:          #483D8B;
+  border:              0px;
+  -moz-border-radius:  15px 15px;    
+}
+
+.buttonEsqueleto2
+{
+  ont-size:            10px;
+  font-family:         Verdana,Helvetica;
+  font-weight:         bold;
+  font-size:           10px;
+  color:               white;
+  background:          #706c8b;
+  border:              0px;
+  -moz-border-radius:  15px 15px;    
+}
+
+.buttonAgregar
+{
+  background-image: url("../images/anadir.png");
+  background-repeat: no-repeat;    
+}
+
+/* FORM ERROR*/
+.form_error 
+{ 
+	color: #706c8b; 
+}
+
+/* REDEFINICIONES */
+img
+{
+  border: 0;
+}
+
+input
+{
+  
+}
+
+a, a:link, a:visited, a:active
+{
+  text-decoration: none;
+}
+
+a:link
+{
+  
+}
+
+a:visited
+{
+  
+}
+
+td a, td a:link, td a:visited, td a:active
+{
+  color: white;
+}
+
+h2 a, td a:link, td a:visited, td a:active
+{
+  color: #706c8b;
+}
+
+
+thead a, thead a:link, thead a:visited, thead a:active
+{
+  color: white;
+}
+
+/* MENU DE NAVEGACION SUPERIOR*/
+#navegacion
+{
+  height:    25px;  
+  width:     95%;
+  margin:    5% auto;  
+}
+
+.botonNav
+{
+  height:           15px;
+  float:            left;
+  margin-left:      2px;
+  margin-right:     1px;
+  margin-top:       2px;
+  margin-bottom:    2px;
+}
+
+.botonNav a
+{
+  height:           15px;
+  float:            left;
+  margin-left:      2px;
+  margin-right:     1px;
+  margin-top:       2px;
+  margin-bottom:    2px; 
+  padding-left:     7px;
+  padding-right:    7px;
+  padding-top:      3px;
+  padding-bottom:   3px;
+  background-color: #FFFFFF;
+  font-weight:      bold;
+  border:           1px solid #000000;
+  color:            #483D8B;
+}
+
+.botonNav a:hover
+{
+  background-color: #483D8B;
+  color:            #FFFFFF;  
+  font-weight:      bold;    
+}
+
+.botonNavSeleccionado a
+{
+  height:           15px;
+  float:            left;
+  margin-left:      2px;
+  margin-right:     1px;
+  margin-top:       2px;
+  margin-bottom:    2px; 
+  padding-left:     7px;
+  padding-right:    7px;
+  padding-top:      3px;
+  padding-bottom:   3px;
+  background-color: #483D8B;
+  font-weight:      bold;
+  border:           1px solid #000000;
+  color:            #FFFFFF;
+}
+
+#subnavegacion
+{ 
+  height:           26px; 
+  width:            100%;
+  margin:           auto;  
+  background-color: #483D8B; 
+}
+
+.botonSubNav a
+{
+  height:           15px;
+  float:            left;
+  margin-left:      2px;
+  margin-right:     1px;
+  margin-top:       2px;
+  margin-bottom:    2px; 
+  padding-left:     7px;
+  padding-right:    7px;
+  padding-top:      3px;
+  padding-bottom:   3px;
+  background-color: #483D8B;
+  font-weight:      bold;
+  color:            #FFFFFF;
+}
+
+.botonSubNav a:hover
+{
+  font-weight:       bold;
+}
+
+/* TITULOS DE LA PÃ�GINA*/
+#tituloTabla
+{
+  width:          100%;
+  margin-top:     15px;
+  margin-bottom:  20px;
+  margin-left:    10px;
+  font-size:      14px;
+  text-align:     left;  
+  color:          #483D8B;
+  font-weight:    bold;
+}
+#tituloTabla a
+{
+  color:           #483D8B; 
+}
+#tituloTabla a:hover
+{ 
+  color:           #483D8B;
+}
+
+/* BUSCADOR */
+.buscador
+{
+  width:               98%;
+  height:              40px;
+  margin:              1% auto;  
+  -moz-border-radius:  15px 15px;
+  border:              1px solid #483D8B;
+  background-color:    #706c8b;
+  text-align:          center;
+  padding-top:         10px;
+  color:               white;
+  font-weight:         bold;
+}
+
+/* Cuando buscamos por categoria, posicion de la subcategoria en el modulo default*/
+#subcategoria2
+{
+  margin-right:150px;
+  margin-left:-170px;
+}
+
+.buscador_ancho
+{
+  width:               98%;
+  height:              75px; 
+  margin-top:          1% auto;
+  padding:             4px 5px;
+  -moz-border-radius:  15px 15px;  ;
+  border:              1px solid #483D8B;
+  background-color:    #706c8b;
+  text-align:          center;
+  padding-top:         10px;
+  color:               white;
+  font-weight:         bold;
+}
+
+#auto
+{ 
+  color:               black;
+  font-weight:         bold;
+}
+
+.buscador_pedido
+{
+  width:               98%;
+  height:              40px;
+  margin:              1% auto;  
+  -moz-border-radius:  15px 15px;
+  border:              1px solid #483D8B;
+  background-color:    #706c8b;
+  text-align:          center;
+  padding-top:         10px;
+  color:               white;
+  font-weight:         bold;
+}
+
+/* PAGINADOR */
+.paginator
+{
+  margin:              0;
+  padding:             8px 0 0;
+  margin-bottom:       15px;
+  display:             block;
+  list-style-image:    none;
+  list-style-position: outside;
+  list-style-type:     none;  
+}
+
+.paginator li 
+{
+  display: inline;
+}
+
+.current a, .previous a, .next a, .page a 
+{
+  color:      white;
+  padding:    2px 4px;
+  background: #706c8b none repeat scroll 0 0;
+  border:     1px solid #483D8B;  
+}
+
+.current
+{
+  color:      white;
+  padding:    5px 7px;
+  background: #483D8B none repeat scroll 0 0;
+  border:     1px solid #483D8B;  
+}
+
+.empty 
+{
+  padding: 5px 7px;
+  color:   #888888;
+}
+
+/* CENTRAR TABLAS*/
+.centrarTablas
+{
+  margin:  auto;
+  color:   #483D8B;
+  padding: 20px;
+}
+
+.centrarTablas thead
+{
+  background-color: #483D8B;
+  color:            white;
+  text-align:       center;
+  font-weight:      bold;
+}
+
+.stock_bajo
+{
+	color:			red;
+}
+
+.stock_alto
+{
+	color:			green;
+}
+
+.centrarTablasL
+{
+  color:   #483D8B;
+  padding: 20px;
+}
+
+.centrarTablasL thead
+{
+  background-color: #483D8B;
+  color:            white;
+  text-align:       center;
+  font-weight:      bold;
+}
+
+/* TABLAS ESTADOS*/
+.tablasEstados
+{
+  color:   #483D8B;
+  margin-left: 25px;
+  padding: 10px;
+  float:   left;
+}
+
+.tablasEstados thead
+{
+  background-color: #483D8B;
+  color:            white;
+  text-align:       center;
+  font-weight:      bold;
+}
+
+/* TABLAS MENU PRINCIPAL*/
+.tablasMenuPrincipal
+{
+  color:   #483D8B;
+  margin-left: 25px;
+  padding: 10px;
+  float:   left;
+}
+
+.tablasMenuPrincipal thead
+{
+  background-color: #483D8B;
+  color:            white;
+  text-align:       center;
+  font-weight:      bold;
+}
+
+/*FICHA*/
+#ficha
+{ 
+  width:  100%;
+  height: 90%;
+  margin: auto;
+  color:  #483D8B;
+}
+
+#tituloFicha
+{
+  width:          100%;
+  margin-top:     5px;
+  margin-bottom:  5px;
+  margin-left:    5px;
+  font-size:      14px;
+  text-align:     left;  
+  color:          #483D8B;
+  font-weight:    bold;
+}
+#tituloFicha a
+{
+  color:           #483D8B; 
+}
+
+#tituloFicha a:hover
+{ 
+  color:           #483D8B;
+}
+
+.lineaFicha
+{	
+  	margin:  20px auto 20px auto;
+	border:  1px solid #483D8B;
+	width:   940px;
+}
+
+.lineaFicha2
+{	
+  	margin:  2px auto 2px auto;
+	border:  1px solid #483D8B;
+	width:   940px;
+}
+
+.info_ficha
+{   
+  width: 99%;
+  height: 99%;  
+  margin-left: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+  float: left;
+  background-color: #DCDCDC;
+  border-top: none;  
+  border: 1px solid #483D8B;
+  text-align: justify; 
+}
+
+.ficha_datos
+{
+	margin: auto;
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.ficha_pedido_proveedor
+{
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 25%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.ficha_pedido_articulos
+{
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 65%;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.ficha_informe_pedidos
+{
+	margin: auto;
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 86%;
+	margin-bottom: 20px;
+}
+
+.ficha_venta_cliente
+{
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 25%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.ficha_venta_articulos
+{
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 65%;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.ficha_informe_ventas
+{
+	margin: auto;
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 86%;
+	margin-bottom: 20px;
+}
+
+.ficha_procesar_entrada
+{
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 25%;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	float: left;
+}
+
+.ficha_procesar_salida
+{
+	background-color: white;
+	border: solid 1px;
+	padding: 10px;
+	width: 25%;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	float: left;
+}
+
+.tabla_ficha
+{
+	width: 100%;	
+}
+.tabla_ficha td
+{
+	border-bottom: solid 1px #DCDCDC;	
+}
+
+.tabla_ficha thead
+{
+  background-color: #483D8B;
+  color:            white;
+  text-align:       center;
+  font-weight:      bold;
+}
+
+#sidebar-tabs ul.tabs{display:block; padding-left: 3px; margin-top:0px; text-transform:uppercase; color: #FFFFFF }
+#sidebar-tabs ul.tabs li{margin-left:8px; display:block; float:left; background-color:#483D8B; color:#FFF; border:1px solid #483D8B; border-width:1px 1px 1px 1px; padding:4px 7px 3px 7px;}
+#sidebar-tabs ul.tabs li a{color: white}
+#sidebar-tabs ul.tabs li.selected{background-color:#fff; border-bottom:none; z-index:9998; padding:4px 7px 4px 7px;}
+#sidebar-tabs ul.tabs li.selected a{color: #483D8B}
+#sidebar-tabs div.tabContent{ padding:0px; padding:0px; margin:0; display:none; }
+#sidebar-tabs div.tabContent.tabContentActive{display:block }
+#sidebar-tabs div.tabContent ol{margin-top:0; margin-bottom:5px}
+#sidebar-tabs div.tabContent ol li{_padding-left:0; padding-top:2px; padding-bottom:2px}
+#sidebar-tabs div.tabContent ul{margin-top:0; margin-bottom:5px}
+#sidebar-tabs div.tabContent ul li{_padding-left:0; padding-top:2px; padding-bottom:2px}
+
+/*FICHA*/
+#cajaPedidoL
+{ 
+  width:  48%;
+  height: 90%;
+  margin: auto;
+  color:  #483D8B;
+  float:  left;
+}
+
+#cajaPedidoR
+{ 
+  width:  48%;
+  height: 90%;
+  margin: auto;
+  color:  #483D8B;
+  float:  left;
+}
+
+/* MÓDULO AYUDA */
+#tituloAyuda
+{
+  margin-top:     1%;
+  margin-bottom:  1%;
+  margin-left:    5%;
+  font-size:      14px;
+  text-align:     left;  
+  color:          #483D8B;
+  font-weight:    bold;
+}
+#tituloAyuda a
+{
+  color:           #483D8B; 
+}
+#tituloAyuda a:hover
+{ 
+  color:           #483D8B;
+}
+
+#textoAyuda
+{
+	text-align: justify;
+	width:      90%;
+	color:      #483D8B;
+	margin-left: 6%;
+}
+
+#textoLateralAyuda
+{
+	text-align: left;
+	width:      20%;
+	color:      #483D8B;
+	margin-left: 6%;
+	float:      left;
+}
+
+#textoLateralAyuda a
+{
+  color:           #483D8B; 
+}
+
+#textoLateralAyuda a:hover
+{ 
+  color:            white;
+  background-color: #706c8b;
+}
+
+#textoLateralAyuda a:visited
+{ 
+  color:            white;
+  background-color: #706c8b;
+}
+
+#textoLateralAyuda2
+{
+	text-align: justify;
+	width:      65%;
+	color:      #483D8B;
+	margin-left: 6%;
+	padding:     1%;
+	float:      left;
+}
+
+#textoDefaultAyuda
+{
+	text-align: center;
+	padding:    10%;
+	font-size:  15px;
+}
+
+#imagenAyuda
+{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+  	border:     1px dotted #706c8b;
+}
+
+#tituloPedido
+{
+  width:          100%;
+  margin-top:     15px;
+  margin-bottom:  5px;
+  margin-left:    10px;
+  font-size:      14px;
+  text-align:     left;  
+  color:          #483D8B;
+  font-weight:    bold;
+}
+
+#tituloPedido a
+{ 
+  float:			right;
+  margin-left:		20px;  
+}
+
+#tituloPedido a:hover
+{ 
+  float:			   right;
+  background-color:    #706c8b;
+}
+
+#tituloVenta
+{
+  width:          100%;
+  margin-top:     15px;
+  margin-bottom:  5px;
+  margin-left:    10px;
+  font-size:      14px;
+  text-align:     left;  
+  color:          #483D8B;
+  font-weight:    bold;
+}
+
+#tituloVenta a
+{ 
+  float:			right;
+  margin-left:		20px;  
+}
+
+#tituloVenta a:hover
+{ 
+  float:			   right;
+  background-color:    #706c8b;
+}

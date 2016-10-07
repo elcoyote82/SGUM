@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesClientes</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesClientes</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con los clientes</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesClientes.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesClientes.class.php.html">/lib/AccionesClientes.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesClientes</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarCliente" title="details" class="method-name">actualizarCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarCliente" title="details" class="method-name">borrarCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarCliente" title="details" class="method-name">comprobarCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarCliente" title="details" class="method-name">guardarCliente</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdClienteXIdMd5" title="details" class="method-name">obtenerIdClienteXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Cliente" title="details" class="method-name">obtenerIdMd5Cliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreClienteXIdCliente" title="details" class="method-name">obtenerNombreClienteXIdCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjCliente" title="details" class="method-name">obtenerObjCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjClienteXIdMd5" title="details" class="method-name">obtenerObjClienteXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectClientes" title="details" class="method-name">obtenerSelectClientes</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectClientes2" title="details" class="method-name">obtenerSelectClientes2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectClientes3" title="details" class="method-name">obtenerSelectClientes3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosClientes" title="details" class="method-name">obtenerTodosClientes</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesClientes</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesClientes</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarCliente" id="actualizarCliente"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarCliente</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un cliente de la tabla Clientes</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del Cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cif_nif</span><span class="var-description">: CIF/NIF del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$poblacion</span><span class="var-description">: Población del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono2</span><span class="var-description">: Otro Teléfono del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$web</span><span class="var-description">: Web del cliente</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nombre</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarCliente" id="borrarCliente"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarCliente</span> (line <span class="line-number">146</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un cliente de la tabla Cliente</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del cliente a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarCliente" id="comprobarCliente"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarCliente</span> (line <span class="line-number">384</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un cliente está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarCliente" id="guardarCliente"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarCliente</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_cliente_save ID del cliente, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarCliente
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cif_nif</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$poblacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$web</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cif_nif</span><span class="var-description">: CIF/NIF del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$poblacion</span><span class="var-description">: Población del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono2</span><span class="var-description">: Otro Teléfono del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$web</span><span class="var-description">: Web del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdClienteXIdMd5" id="obtenerIdClienteXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdClienteXIdMd5</span> (line <span class="line-number">183</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del cliente a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdClienteXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_cliente</span><span class="var-description">: Id Md5 del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Cliente" id="obtenerIdMd5Cliente"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Cliente</span> (line <span class="line-number">259</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Cliente a partir del id del cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Cliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreClienteXIdCliente" id="obtenerNombreClienteXIdCliente"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreClienteXIdCliente</span> (line <span class="line-number">360</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el nombre del Cliente a partir del id de cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del Cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreClienteXIdCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjCliente" id="obtenerObjCliente"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjCliente</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Cliente a partir del id de cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_cliente    Objeto Cliente buscado por el id del cliente,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjClienteXIdMd5" id="obtenerObjClienteXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjClienteXIdMd5</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Cliente a partir del id md5 del cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Cliente buscado por el id md5 del cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjClienteXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_cliente</span><span class="var-description">: Id Md5 del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectClientes" id="obtenerSelectClientes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectClientes</span> (line <span class="line-number">284</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los clientes de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de clientes con llave el id del cliente y contenido el Nombre del cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectClientes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectClientes2" id="obtenerSelectClientes2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectClientes2</span> (line <span class="line-number">309</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los clientes de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de clientes con llave el id del cliente y contenido el Nombre del cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectClientes2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectClientes3" id="obtenerSelectClientes3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectClientes3</span> (line <span class="line-number">334</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los clientes de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Cliente&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de clientes con llave el id del cliente y contenido el Nombre del cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectClientes3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosClientes" id="obtenerTodosClientes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosClientes</span> (line <span class="line-number">209</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Cliente, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosClientes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:35 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

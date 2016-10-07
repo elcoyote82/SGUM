@@ -1,0 +1,24 @@
+# Acción para la Administración de Clientes
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para Agregar un Cliente
+agregarCliente:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+
+# Acción para Borrar un Cliente
+borrarCliente:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para editar un Cliente
+editarCliente:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para Ver la Ficha de un Cliente
+verCliente:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]

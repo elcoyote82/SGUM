@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesContactos</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesContactos</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con los contactos</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesContactos.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesContactos.class.php.html">/lib/AccionesContactos.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesContactos</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarContacto" title="details" class="method-name">actualizarContacto</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_contactado</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_jefe</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$puesto</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$localidad</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ext_telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email3</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarContacto" title="details" class="method-name">borrarContacto</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarContacto" title="details" class="method-name">comprobarContacto</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_jefe</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarContactosCliente" title="details" class="method-name">comprobarContactosCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarContactosProveedor" title="details" class="method-name">comprobarContactosProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarContacto" title="details" class="method-name">guardarContacto</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_contactado</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_jefe</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$puesto</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$localidad</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ext_telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email3</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$opcion_contacto</span>, <span class="var-type">enum</span>&nbsp;<span class="var-name">$opcion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerContactosXIdCliente" title="details" class="method-name">obtenerContactosXIdCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerContactosXIdProveedor" title="details" class="method-name">obtenerContactosXIdProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdContactoXIdMd5" title="details" class="method-name">obtenerIdContactoXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_contacto</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Contacto" title="details" class="method-name">obtenerIdMd5Contacto</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreClienteXIdContactado" title="details" class="method-name">obtenerNombreClienteXIdContactado</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreJefeXIdJefe" title="details" class="method-name">obtenerNombreJefeXIdJefe</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreProveedorXIdContactado" title="details" class="method-name">obtenerNombreProveedorXIdContactado</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjContacto" title="details" class="method-name">obtenerObjContacto</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjContactoXIdMd5" title="details" class="method-name">obtenerObjContactoXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_contacto</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectContactos" title="details" class="method-name">obtenerSelectContactos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectContactos2" title="details" class="method-name">obtenerSelectContactos2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectContactos3" title="details" class="method-name">obtenerSelectContactos3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectContactosXIdCliente" title="details" class="method-name">obtenerSelectContactosXIdCliente</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectContactosXIdProveedor" title="details" class="method-name">obtenerSelectContactosXIdProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosContactos" title="details" class="method-name">obtenerTodosContactos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosContactosClientes" title="details" class="method-name">obtenerTodosContactosClientes</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosContactosProveedores" title="details" class="method-name">obtenerTodosContactosProveedores</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesContactos</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesContactos</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarContacto" id="actualizarContacto"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarContacto</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un contacto de la tabla Contactos</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarContacto
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_contactado</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_jefe</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$puesto</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$localidad</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ext_telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email3</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_contacto</span><span class="var-description">: Id del Contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_contactado</span><span class="var-description">: Id del proveedor o del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_jefe</span><span class="var-description">: Id del jefe</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apellidos</span><span class="var-description">: Apellidos del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$puesto</span><span class="var-description">: Puesto del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$localidad</span><span class="var-description">: Localidad del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ext_telefono</span><span class="var-description">: Extensión Teléfono del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_otro</span><span class="var-description">: Teléfono Otro del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_trabajo</span><span class="var-description">: Teléfono Trabajo del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email2</span><span class="var-description">: Email2 del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email3</span><span class="var-description">: Email3 del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$observaciones</span><span class="var-description">: Observaciones del contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarContacto" id="borrarContacto"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarContacto</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un contacto de la tabla Contacto</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarContacto
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_contacto</span><span class="var-description">: Id del contacto a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarContacto" id="comprobarContacto"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarContacto</span> (line <span class="line-number">698</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un contacto es jefe de otro contacto</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarContacto
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_jefe</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_jefe</span><span class="var-description">: Id del contacto que es jefe</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarContactosCliente" id="comprobarContactosCliente"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarContactosCliente</span> (line <span class="line-number">672</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un cliente está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarContactosCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarContactosProveedor" id="comprobarContactosProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarContactosProveedor</span> (line <span class="line-number">646</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un proveedor está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarContactosProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarContacto" id="guardarContacto"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarContacto</span> (line <span class="line-number">48</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Contacto</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_contacto_save ID del contacto, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarContacto
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_contactado</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_jefe</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apellidos</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$puesto</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$direccion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$cp</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$localidad</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$provincia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pais</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ext_telefono</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_otro</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$telefono_trabajo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$movil</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$fax</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email2</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email3</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$observaciones</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$opcion_contacto</span>, <span class="var-type">enum</span>&nbsp;<span class="var-name">$opcion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_contactado</span><span class="var-description">: Id del proveedor o del cliente</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_jefe</span><span class="var-description">: Id del jefe</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apellidos</span><span class="var-description">: Apellidos del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$puesto</span><span class="var-description">: Puesto del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direccion</span><span class="var-description">: Dirección del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cp</span><span class="var-description">: Código Postal del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$localidad</span><span class="var-description">: Localidad del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$provincia</span><span class="var-description">: Provincia del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pais</span><span class="var-description">: País del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono</span><span class="var-description">: Teléfono del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ext_telefono</span><span class="var-description">: Extensión Teléfono del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_otro</span><span class="var-description">: Teléfono Otro del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$telefono_trabajo</span><span class="var-description">: Teléfono Trabajo del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$movil</span><span class="var-description">: Móvil del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fax</span><span class="var-description">: Fax del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email2</span><span class="var-description">: Email2 del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email3</span><span class="var-description">: Email3 del contacto</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$observaciones</span><span class="var-description">: Observaciones del contacto</span>			</li>
+					<li>
+				<span class="var-type">enum</span>
+				<span class="var-name">$opcion</span><span class="var-description">: Opcion, 0 es Proveedor, 1 es Cliente</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$opcion_contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerContactosXIdCliente" id="obtenerContactosXIdCliente"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerContactosXIdCliente</span> (line <span class="line-number">467</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un array con todos los contactos segun el id de cliente</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos del cliente escogido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerContactosXIdCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del Cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerContactosXIdProveedor" id="obtenerContactosXIdProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerContactosXIdProveedor</span> (line <span class="line-number">441</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un array con todos los contactos segun el id de proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos del proveedor escogido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerContactosXIdProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del Proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdContactoXIdMd5" id="obtenerIdContactoXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdContactoXIdMd5</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del contacto a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdContactoXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_contacto</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_contacto</span><span class="var-description">: Id Md5 del contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Contacto" id="obtenerIdMd5Contacto"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Contacto</span> (line <span class="line-number">340</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Contacto a partir del id del contacto</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Contacto
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_contacto</span><span class="var-description">: Id del contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreClienteXIdContactado" id="obtenerNombreClienteXIdContactado"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreClienteXIdContactado</span> (line <span class="line-number">586</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtenemos el nombe del Cliente a través del id del contactado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del Cliente</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreClienteXIdContactado
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del Cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreJefeXIdJefe" id="obtenerNombreJefeXIdJefe"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreJefeXIdJefe</span> (line <span class="line-number">609</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtenemos el nombe del Jefe a través del id del contactado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del Contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreJefeXIdJefe
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_contacto</span><span class="var-description">: Id del Contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreProveedorXIdContactado" id="obtenerNombreProveedorXIdContactado"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreProveedorXIdContactado</span> (line <span class="line-number">563</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtenemos el nombe del Proveedor a través del id del contactado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre del Proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreProveedorXIdContactado
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del Proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjContacto" id="obtenerObjContacto"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjContacto</span> (line <span class="line-number">193</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Contacto a partir del id de contacto</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_contacto    Objeto Contacto buscado por el id del contacto,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjContacto
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_contacto</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_contacto</span><span class="var-description">: Id del contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjContactoXIdMd5" id="obtenerObjContactoXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjContactoXIdMd5</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Contacto a partir del id md5 del contacto</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Contacto buscado por el id md5 del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjContactoXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_contacto</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_contacto</span><span class="var-description">: Id Md5 del contacto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectContactos" id="obtenerSelectContactos"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectContactos</span> (line <span class="line-number">365</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los contactos de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos con llave el id del contacto y contenido el Nombre del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectContactos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectContactos2" id="obtenerSelectContactos2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectContactos2</span> (line <span class="line-number">390</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los contactos de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos con llave el id del contacto y contenido el Nombre del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectContactos2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectContactos3" id="obtenerSelectContactos3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectContactos3</span> (line <span class="line-number">415</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los contactos de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Contacto&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos con llave el id del contacto y contenido el Nombre del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectContactos3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectContactosXIdCliente" id="obtenerSelectContactosXIdCliente"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectContactosXIdCliente</span> (line <span class="line-number">529</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los contactos segun el id del cliente  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos con llave el id del contacto y                              contenido el Nombre del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectContactosXIdCliente
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_cliente</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_cliente</span><span class="var-description">: Id del Cliente</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectContactosXIdProveedor" id="obtenerSelectContactosXIdProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectContactosXIdProveedor</span> (line <span class="line-number">495</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los contactos de los proveedores  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de contactos con llave el id del contacto y                              contenido el Nombre del contacto</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectContactosXIdProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del Proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerTodosContactos" id="obtenerTodosContactos"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosContactos</span> (line <span class="line-number">242</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Contacto</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Contacto, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosContactos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosContactosClientes" id="obtenerTodosContactosClientes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosContactosClientes</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Contacto de los Clientes</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Contacto de los Clientes,                                   FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosContactosClientes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosContactosProveedores" id="obtenerTodosContactosProveedores"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosContactosProveedores</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Contacto de los Proveedores</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Contacto de los Proveedores,                                   FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosContactosProveedores
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:35 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

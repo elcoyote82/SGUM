@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesPedidos</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesPedidos</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con los pedidos</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesPedidos.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesPedidos.class.php.html">/lib/AccionesPedidos.class.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesPedidos</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarEstadoPedido" title="details" class="method-name">actualizarEstadoPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarLineaPedido" title="details" class="method-name">actualizarLineaPedido</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$id_articulo_x_pedido</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$cantidad</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarLineaPedido" title="details" class="method-name">borrarLineaPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_linea_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarPedido" title="details" class="method-name">borrarPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarPedido" title="details" class="method-name">comprobarPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#generarInformePedido" title="details" class="method-name">generarInformePedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#guardarLineaPedido" title="details" class="method-name">guardarLineaPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$cantidad</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#guardarPedido" title="details" class="method-name">guardarPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdPedidoXIdMd5" title="details" class="method-name">obtenerIdPedidoXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerLineasPedido" title="details" class="method-name">obtenerLineasPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerLineasPedidoXIdPedido" title="details" class="method-name">obtenerLineasPedidoXIdPedido</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$id_pedido_temporal</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjArticulosXPedido" title="details" class="method-name">obtenerObjArticulosXPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo_x_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjPedido" title="details" class="method-name">obtenerObjPedido</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerObjPedidoXIdMd5Albaran" title="details" class="method-name">obtenerObjPedidoXIdMd5Albaran</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_albaran</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerPedidosXIdProveedor" title="details" class="method-name">obtenerPedidosXIdProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">17</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesPedidos</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesPedidos</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarEstadoPedido" id="actualizarEstadoPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoPedido</span> (line <span class="line-number">90</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizar el estado del pedido según el valor pasado como parámetro</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarEstadoPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_estado_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del Pedido</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_estado_pedido</span><span class="var-description">: Id del estado_pedido                                          (1-Borrador,2-EnProceso,3-Recibido,4-Completo,5-Procesado)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarLineaPedido" id="actualizarLineaPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarLineaPedido</span> (line <span class="line-number">162</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizar un pedido</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarLineaPedido
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$id_articulo_x_pedido</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$cantidad</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del Pedido</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_articulo_x_pedido</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$cantidad</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarLineaPedido" id="borrarLineaPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarLineaPedido</span> (line <span class="line-number">180</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar una linea de pedido</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarLineaPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_linea_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_linea_pedido</span><span class="var-description">: Id de la Linea de Pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarPedido" id="borrarPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarPedido</span> (line <span class="line-number">203</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un pedido de la tabla Pedidos</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del pedido a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarPedido" id="comprobarPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarPedido</span> (line <span class="line-number">402</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un pedido es un borrador</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si es un borrador, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del Pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgenerarInformePedido" id="generarInformePedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">generarInformePedido</span> (line <span class="line-number">427</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generamos el informe del pedido</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			generarInformePedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarLineaPedido" id="guardarLineaPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarLineaPedido</span> (line <span class="line-number">116</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar una linea de  pedido</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			guardarLineaPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$cantidad</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del Pedido</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$cantidad</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarPedido" id="guardarPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarPedido</span> (line <span class="line-number">28</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un pedido</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			guardarPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo (opcional)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdPedidoXIdMd5" id="obtenerIdPedidoXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdPedidoXIdMd5</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del pedido a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdPedidoXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_pedido</span><span class="var-description">: Id Md5 del pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerLineasPedido" id="obtenerLineasPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerLineasPedido</span> (line <span class="line-number">347</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener las lineas de un pedido a través del Id de Pedido</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto de esa linea de pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerLineasPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del Pedido  * @param integer $id_articulo Id del Articulo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerLineasPedidoXIdPedido" id="obtenerLineasPedidoXIdPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerLineasPedidoXIdPedido</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener las lineas de un pedido a través del Id de Pedido</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array con todas las lineas de pedido para ese id de pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerLineasPedidoXIdPedido
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$id_pedido_temporal</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del Pedido</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_pedido_temporal</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjArticulosXPedido" id="obtenerObjArticulosXPedido"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjArticulosXPedido</span> (line <span class="line-number">323</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Articulo_X_Pedido a partir del Id del Articulo_X_Pedido</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_articulo_x_pedido    Objeto Articulo_X_Pedido buscado por el id del Articulo_X_Pedido,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjArticulosXPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo_x_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo_x_pedido</span><span class="var-description">: Id del Articulo_X_Pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjPedido" id="obtenerObjPedido"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjPedido</span> (line <span class="line-number">242</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Pedido a partir del id de pedido</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_pedido    Objeto Pedido buscado por el id del pedido,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjPedido
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_pedido</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_pedido</span><span class="var-description">: Id del pedido</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjPedidoXIdMd5Albaran" id="obtenerObjPedidoXIdMd5Albaran"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjPedidoXIdMd5Albaran</span> (line <span class="line-number">293</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Objeto pedido a partir del Id Md5 del Albaran</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto pedido</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerObjPedidoXIdMd5Albaran
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_albaran</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_albaran</span><span class="var-description">: Id Md5 del albaran</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerPedidosXIdProveedor" id="obtenerPedidosXIdProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerPedidosXIdProveedor</span> (line <span class="line-number">374</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener los últimos 10 pedidos del proveedor para la ficha de Proveedores</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> ar_pedidos Array con los pedidos del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerPedidosXIdProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del Proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:46 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

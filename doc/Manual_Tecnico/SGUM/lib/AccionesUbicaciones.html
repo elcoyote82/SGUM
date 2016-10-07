@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesUbicaciones</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesUbicaciones</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con las ubicaciones de los articulos</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesUbicaciones.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesUbicaciones.class.php.html">/lib/AccionesUbicaciones.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesUbicaciones</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarCapacidadUbicaciones" title="details" class="method-name">actualizarCapacidadUbicaciones</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarEstadoUbicacion" title="details" class="method-name">actualizarEstadoUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarUbicacion" title="details" class="method-name">actualizarUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarUbicacion" title="details" class="method-name">borrarUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarUbicacion" title="details" class="method-name">comprobarUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarUbicacion" title="details" class="method-name">guardarUbicacion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerArticulosXIdUbicacion" title="details" class="method-name">obtenerArticulosXIdUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Ubicacion" title="details" class="method-name">obtenerIdMd5Ubicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdUbicacionXIdMd5" title="details" class="method-name">obtenerIdUbicacionXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerNombreUbicacionXIdUbicacion" title="details" class="method-name">obtenerNombreUbicacionXIdUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjUbicacion" title="details" class="method-name">obtenerObjUbicacion</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjUbicacionXIdMd5" title="details" class="method-name">obtenerObjUbicacionXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_ubicacion</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectUbicaciones" title="details" class="method-name">obtenerSelectUbicaciones</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectUbicaciones2" title="details" class="method-name">obtenerSelectUbicaciones2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectUbicaciones3" title="details" class="method-name">obtenerSelectUbicaciones3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosUbicaciones" title="details" class="method-name">obtenerTodosUbicaciones</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerTotalArticulosUbicacion" title="details" class="method-name">obtenerTotalArticulosUbicacion</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesUbicaciones</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesUbicaciones</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarCapacidadUbicaciones" id="actualizarCapacidadUbicaciones"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarCapacidadUbicaciones</span> (line <span class="line-number">405</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos el estado de ocupacion de las Ubicaciones</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarCapacidadUbicaciones
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarEstadoUbicacion" id="actualizarEstadoUbicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarEstadoUbicacion</span> (line <span class="line-number">387</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos el estado de ocupacion de una ubicacion de la tabla Ubicaciones</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarEstadoUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la Ubicacion</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_estado_ubicacion</span><span class="var-description">: Id Estado de la Ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarUbicacion" id="actualizarUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarUbicacion</span> (line <span class="line-number">80</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos una ubicacion de la tabla Ubicaciones</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$id_estado_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la Ubicacion</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la ubicacion</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_estado_ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarUbicacion" id="borrarUbicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarUbicacion</span> (line <span class="line-number">99</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar una ubicacion de la tabla Ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la ubicacion a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarUbicacion" id="comprobarUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarUbicacion</span> (line <span class="line-number">361</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si una ubicación está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarUbicacion" id="guardarUbicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarUbicacion</span> (line <span class="line-number">28</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_ubicacion_save ID de la ubicacion, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarUbicacion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerArticulosXIdUbicacion" id="obtenerArticulosXIdUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerArticulosXIdUbicacion</span> (line <span class="line-number">336</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener array de UbicacionLote a partir del Id de la Ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Articulos y lotes del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerArticulosXIdUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: ID de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Ubicacion" id="obtenerIdMd5Ubicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Ubicacion</span> (line <span class="line-number">212</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Ubicacion a partir del id de la ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 de la ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Ubicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdUbicacionXIdMd5" id="obtenerIdUbicacionXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdUbicacionXIdMd5</span> (line <span class="line-number">136</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id de la ubicacion a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id de la ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdUbicacionXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_ubicacion</span><span class="var-description">: Id Md5 de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerNombreUbicacionXIdUbicacion" id="obtenerNombreUbicacionXIdUbicacion"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerNombreUbicacionXIdUbicacion</span> (line <span class="line-number">313</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el nombre de la Ubicacion a partir del id de ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Nombre de la Ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerNombreUbicacionXIdUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjUbicacion" id="obtenerObjUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjUbicacion</span> (line <span class="line-number">113</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Ubicacion a partir del id de ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_ubicacion    Objeto Ubicacion buscado por el id de la ubicacion,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjUbicacion
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_ubicacion</span><span class="var-description">: Id de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjUbicacionXIdMd5" id="obtenerObjUbicacionXIdMd5"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjUbicacionXIdMd5</span> (line <span class="line-number">186</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Ubicacion a partir del id md5 de la ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Ubicacion buscado por el id md5 de la ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjUbicacionXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_ubicacion</span><span class="var-description">: Id Md5 de la ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectUbicaciones" id="obtenerSelectUbicaciones"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectUbicaciones</span> (line <span class="line-number">237</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los ubicaciones de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de ubicaciones con llave el id de la ubicacion y contenido el Nombre de la ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectUbicaciones
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectUbicaciones2" id="obtenerSelectUbicaciones2"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectUbicaciones2</span> (line <span class="line-number">262</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los ubicaciones de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de ubicaciones con llave el id de la ubicacion y contenido el Nombre de la ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectUbicaciones2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectUbicaciones3" id="obtenerSelectUbicaciones3"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectUbicaciones3</span> (line <span class="line-number">287</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los ubicaciones de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Ubicacion&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de ubicaciones con llave el id de la ubicacion y contenido el Nombre de la ubicacion</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectUbicaciones3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosUbicaciones" id="obtenerTodosUbicaciones"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosUbicaciones</span> (line <span class="line-number">162</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Ubicacion, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosUbicaciones
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTotalArticulosUbicacion" id="obtenerTotalArticulosUbicacion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTotalArticulosUbicacion</span> (line <span class="line-number">487</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtenemos el total de articulos ubicados en una ubicacion</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Total de articulos ubicados</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerTotalArticulosUbicacion
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$id_ubicacion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$id_ubicacion</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:48 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

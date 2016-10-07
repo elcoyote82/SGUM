@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class AccionesArticulos</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> AccionesArticulos</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clase para gestionar todo lo relacionado con los articulos</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Adrián Corujo Carballedo</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">name:</span> AccionesArticulos.class.php</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---AccionesArticulos.class.php.html">/lib/AccionesArticulos.class.php</a> (line <span class="field">11</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																								<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">AccionesArticulos</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#actualizarArticulo" title="details" class="method-name">actualizarArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$datos_producto</span>, <span class="var-type">text</span>&nbsp;<span class="var-name">$descripcion</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$aviso_minimo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$stock_minimo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$imagen</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$lote</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">TRUE</span>
+										<a href="#actualizarArticuloXProveedor" title="details" class="method-name">actualizarArticuloXProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#actualizarStockBajo" title="details" class="method-name">actualizarStockBajo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$valor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#agregarStock" title="details" class="method-name">agregarStock</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$cantidad</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#borrarArticulo" title="details" class="method-name">borrarArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">TRUE</span>
+										<a href="#borrarArticuloXProveedor" title="details" class="method-name">borrarArticuloXProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#comprobarArticulo" title="details" class="method-name">comprobarArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#comprobarStockArticulos" title="details" class="method-name">comprobarStockArticulos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">TRUE</span>
+										<a href="#comprobarUltimaActualizacionStock" title="details" class="method-name">comprobarUltimaActualizacionStock</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#guardarArticulo" title="details" class="method-name">guardarArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$datos_producto</span>, <span class="var-type">text</span>&nbsp;<span class="var-name">$descripcion</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$aviso_minimo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$stock_minimo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$lote</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">TRUE</span>
+										<a href="#guardarArticuloXProveedor" title="details" class="method-name">guardarArticuloXProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerArticulosXIdProveedor" title="details" class="method-name">obtenerArticulosXIdProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerArticulosXProveedor" title="details" class="method-name">obtenerArticulosXProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">integer</span>
+										<a href="#obtenerIdArticuloXIdMd5" title="details" class="method-name">obtenerIdArticuloXIdMd5</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#obtenerIdMd5Articulo" title="details" class="method-name">obtenerIdMd5Articulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjArticulo" title="details" class="method-name">obtenerObjArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjArticulosXLote" title="details" class="method-name">obtenerObjArticulosXLote</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$cantidad</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">objeto</span>
+										<a href="#obtenerObjArticuloXIdMd5" title="details" class="method-name">obtenerObjArticuloXIdMd5</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerObjArticuloXProveedor" title="details" class="method-name">obtenerObjArticuloXProveedor</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerProveedoresXIdArticulo" title="details" class="method-name">obtenerProveedoresXIdArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectArticulos" title="details" class="method-name">obtenerSelectArticulos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectArticulos2" title="details" class="method-name">obtenerSelectArticulos2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerSelectArticulos3" title="details" class="method-name">obtenerSelectArticulos3</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerTodosArticulos" title="details" class="method-name">obtenerTodosArticulos</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#obtenerUbicacionesXIdArticulo" title="details" class="method-name">obtenerUbicacionesXIdArticulo</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#quitarStock" title="details" class="method-name">quitarStock</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$cantidad</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">16</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor de la clase AccionesArticulos</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">AccionesArticulos</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodactualizarArticulo" id="actualizarArticulo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarArticulo</span> (line <span class="line-number">130</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos un articulo de la tabla Articulos</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si todo ha ido correctamente, 0 en caso de haber cambios, FALSE en caso de error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			actualizarArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$datos_producto</span>, <span class="var-type">text</span>&nbsp;<span class="var-name">$descripcion</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$aviso_minimo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$stock_minimo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$imagen</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$lote</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id de la familia</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del articulo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$lote</span><span class="var-description">: Lote del articulo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$datos_producto</span><span class="var-description">: Datos del del articulo</span>			</li>
+					<li>
+				<span class="var-type">text</span>
+				<span class="var-name">$descripcion</span><span class="var-description">: Descripcion del articulo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$imagen</span><span class="var-description">: Imagen del articulo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aviso_minimo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$stock_minimo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarArticuloXProveedor" id="actualizarArticuloXProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarArticuloXProveedor</span> (line <span class="line-number">166</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos los diferente Proveedores del Artículo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> si todo ha ido correcto FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			actualizarArticuloXProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodactualizarStockBajo" id="actualizarStockBajo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">actualizarStockBajo</span> (line <span class="line-number">670</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Actualizamos stock_bajo del articulo a 1 segun el id del articulo</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			actualizarStockBajo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$valor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo a actualizar</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$valor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodagregarStock" id="agregarStock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">agregarStock</span> (line <span class="line-number">735</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Agregar stock del articulo segun el id del articulo</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			agregarStock
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$cantidad</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo a actualizar</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$cantidad</span><span class="var-description">: Cantidad de articulos a sumar al stock</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarArticulo" id="borrarArticulo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarArticulo</span> (line <span class="line-number">191</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borrar un articulo de la tabla Articulo</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			borrarArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo a borrar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodborrarArticuloXProveedor" id="borrarArticuloXProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">borrarArticuloXProveedor</span> (line <span class="line-number">205</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Borramos el ArticuloXProveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> si todo ha ido correcto FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			borrarArticuloXProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarArticulo" id="comprobarArticulo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarArticulo</span> (line <span class="line-number">577</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si un artículo está siendo usado</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE si está siendo usado, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			comprobarArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomprobarStockArticulos" id="comprobarStockArticulos"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarStockArticulos</span> (line <span class="line-number">624</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobar si los articulos están bajo de existencias, en caso de estar bajo de existencias se pone stock_bajo a 1</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			comprobarStockArticulos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcomprobarUltimaActualizacionStock" id="comprobarUltimaActualizacionStock"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">comprobarUltimaActualizacionStock</span> (line <span class="line-number">699</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comprobamos la fecha de la ultima actualizacion del stock</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> si podemos actualizar ya que ya ha pasado el tiempo, FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			comprobarUltimaActualizacionStock
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodguardarArticulo" id="guardarArticulo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarArticulo</span> (line <span class="line-number">32</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardar un objeto Articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | boolean $id_articulo_save ID del articulo, o FALSE si hubo un fallo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			guardarArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_familia</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$nombre</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$datos_producto</span>, <span class="var-type">text</span>&nbsp;<span class="var-name">$descripcion</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$aviso_minimo</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$stock_minimo</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$lote</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_familia</span><span class="var-description">: Id de la familia</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre del articulo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$lote</span><span class="var-description">: Lote del articulo</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$datos_producto</span><span class="var-description">: Datos del del articulo</span>			</li>
+					<li>
+				<span class="var-type">text</span>
+				<span class="var-name">$descripcion</span><span class="var-description">: Descripcion del articulo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aviso_minimo</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$stock_minimo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodguardarArticuloXProveedor" id="guardarArticuloXProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">guardarArticuloXProveedor</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Guardamos los diferente Proveedores del Artículo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> si todo ha ido correcto FALSE en caso contrario</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			guardarArticuloXProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: Id del proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerArticulosXIdProveedor" id="obtenerArticulosXIdProveedor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerArticulosXIdProveedor</span> (line <span class="line-number">524</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener array de Articulos a partir del Id del Proveedor</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Articulos del proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerArticulosXIdProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: ID del Proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerArticulosXProveedor" id="obtenerArticulosXProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerArticulosXProveedor</span> (line <span class="line-number">443</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un array con los proveedores que tienen el articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Proveedores del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerArticulosXProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: ID del Articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdArticuloXIdMd5" id="obtenerIdArticuloXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdArticuloXIdMd5</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id del articulo a partir del Id Md5</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			obtenerIdArticuloXIdMd5
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id_md5_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id_md5_articulo</span><span class="var-description">: Id Md5 del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerIdMd5Articulo" id="obtenerIdMd5Articulo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerIdMd5Articulo</span> (line <span class="line-number">341</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el Id Md5 del Articulo a partir del id del articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Id Md5 del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			obtenerIdMd5Articulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjArticulo" id="obtenerObjArticulo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjArticulo</span> (line <span class="line-number">242</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Articulo a partir del id de articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $obj_articulo    Objeto Articulo buscado por el id del articulo,                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjArticulosXLote" id="obtenerObjArticulosXLote"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjArticulosXLote</span> (line <span class="line-number">800</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto ArticulosXLote ordenados por la fecha más antigua</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> | false $ar_articulos_x_lote    Array de ArticulosXLote                                                  FALSE en caso de no existir</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjArticulosXLote
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$cantidad</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$cantidad</span><span class="var-description">: Limite articulos a buscar</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjArticuloXIdMd5" id="obtenerObjArticuloXIdMd5"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjArticuloXIdMd5</span> (line <span class="line-number">315</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener el objeto Articulo a partir del id md5 del articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Articulo buscado por el id md5 del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">objeto</span>
+		<span class="method-name">
+			obtenerObjArticuloXIdMd5
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_md5_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_md5_articulo</span><span class="var-description">: Id Md5 del articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerObjArticuloXProveedor" id="obtenerObjArticuloXProveedor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerObjArticuloXProveedor</span> (line <span class="line-number">549</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un objeto Articulo_X_Proveedor a partir del Id del Proveedor y del Id del Articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Objeto Articulo_X_Proveedor</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerObjArticuloXProveedor
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$id_proveedor</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: ID del Articulo</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_proveedor</span><span class="var-description">: ID del Proveedor</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerProveedoresXIdArticulo" id="obtenerProveedoresXIdArticulo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerProveedoresXIdArticulo</span> (line <span class="line-number">500</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener array de Proveedores a partir del Id del Articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Proveedores del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerProveedoresXIdArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: ID del Articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodobtenerSelectArticulos" id="obtenerSelectArticulos"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectArticulos</span> (line <span class="line-number">366</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los articulos de la aplicacion  ID = 0 -&gt; &quot;&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de articulos con llave el id del articulo y contenido el Nombre del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectArticulos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectArticulos2" id="obtenerSelectArticulos2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectArticulos2</span> (line <span class="line-number">391</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los articulos de la aplicacion  ID = 0 -&gt; &quot;-------&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de articulos con llave el id del articulo y contenido el Nombre del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectArticulos2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerSelectArticulos3" id="obtenerSelectArticulos3"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerSelectArticulos3</span> (line <span class="line-number">416</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener un Select con todos los articulos de la aplicacion  ID = 0 -&gt; &quot;Seleccionar Articulo&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de articulos con llave el id del articulo y contenido el Nombre del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerSelectArticulos3
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerTodosArticulos" id="obtenerTodosArticulos"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerTodosArticulos</span> (line <span class="line-number">291</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener todos los objetos Articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Array de todos los objetos Articulo, FALSE en caso de que no haya</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerTodosArticulos
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodobtenerUbicacionesXIdArticulo" id="obtenerUbicacionesXIdArticulo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">obtenerUbicacionesXIdArticulo</span> (line <span class="line-number">474</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Obtener array de UbicacionLote a partir del Id del Articulo</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Ubicaciones y lotes del articulo</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			obtenerUbicacionesXIdArticulo
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: ID del Articulo</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodquitarStock" id="quitarStock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">quitarStock</span> (line <span class="line-number">766</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Quitar stock del articulo segun el id del articulo</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			quitarStock
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$id_articulo</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$cantidad</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$id_articulo</span><span class="var-description">: Id del articulo a actualizar</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$cantidad</span><span class="var-description">: Cantidad de articulos a restar al stock</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2011 12:56:34 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

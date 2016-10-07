@@ -1,0 +1,24 @@
+fields:
+  nombre:
+    required:
+      msg: El campo nombre no puede estar vacio.
+    sfStringValidator:
+      min: 3
+      min_error: Debe contener al menos 3 caracteres.
+  cif_nif:
+    required:
+      msg: El campo cif/nif no puede estar vacio.
+    sfCallbackValidator:
+      callback:      [Utilidades, valida_nif_cif_nie]
+      invalid_error: Por favor, introduce un cif o nif correcto.
+  telefono:
+    required:
+      msg: El campo teléfono no puede estar vacio.
+    sfNumberValidator:
+      nan_error:    Por favor, introduce un teléfono correcto
+  email:
+    sfEmailValidator:
+      strict: true
+      email_error: Debe escribir una direccion de mail correcta.
+fillin:
+  enabled: true

@@ -1,0 +1,1 @@
+<?php echo __("Y la otra opción es descargar el informe, simplemente debemos pulsar el icono ").image_tag('manual/icono_pdf.png').__(" y se abrirá una ventana para que descarguemos el informe escogido."); ?>

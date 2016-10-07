@@ -1,0 +1,24 @@
+# Acción para la Administración de Proveedores
+index:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para Agregar un Proveedor
+agregarProveedor:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+
+# Acción para Borrar un Proveedor
+borrarProveedor:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para editar un Proveedor
+editarProveedor:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
+  
+# Acción para Ver la Ficha de un Proveedor
+verProveedor:
+  is_secure: on
+  credentials: [[Administrador, Comercial]]
